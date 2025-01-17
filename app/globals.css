@@ -19,13 +19,13 @@ body {
 
 .dark .theme-switcher {
   background-image: url('../public/icons/dark-theme-icon.svg');
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 .light .theme-switcher {
   background-image: url('../public/icons/light-theme-icon.svg');
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
