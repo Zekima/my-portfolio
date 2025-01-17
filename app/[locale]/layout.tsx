@@ -28,12 +28,16 @@ export default async function LocaleLayout({
     return (
         <html lang={locale} suppressHydrationWarning>
             <body className={`${inter.className} antialiased`}>
-                <NextIntlClientProvider messages={messages}>
-                    <ThemeProvider>
-                        <NavBar/>                 
-                        {children}
-                    </ThemeProvider>
-                </NextIntlClientProvider>
+                <div className='w-full px-4'>
+                    <div className='max-w-[1280px] m-auto'>
+                        <NextIntlClientProvider messages={messages}>
+                            <ThemeProvider>
+                                <NavBar />
+                                {children}
+                            </ThemeProvider>
+                        </NextIntlClientProvider>
+                    </div>
+                </div>
             </body>
         </html>
     );

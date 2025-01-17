@@ -1,7 +1,8 @@
 {
     "HomePage": {
-      "title": "Hei verden!"
-    },
+        "heroTitle": "Hei, jeg er Christian",
+        "heroSubtitle": "Jeg lager gjennomtenkte digitale opplevelser med fokus på Next.js, design og funksjonalitet."
+      },
     "NavBar": {
         "p1": "Prosjekter",
         "p2": "Utdanning",

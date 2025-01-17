@@ -26,7 +26,7 @@ export default function LocaleSwitcherButtons({ currentLocale }: { currentLocale
     };
 
     return (
-        <div className="flex space-x-2">
+        <div className="flex space-x-2 items-center">
             <button
                 className={`w-[22px] ${currentLocale === 'en'
                     ? 'font-semibold hover:underline'
@@ -36,7 +36,7 @@ export default function LocaleSwitcherButtons({ currentLocale }: { currentLocale
             >
                 EN
             </button>
-            <div className="border-l-4   border-dotted h-[30px] border-black dark:border-white"></div>
+            <div className="border-l-4  border-dotted h-[17px] border-black dark:border-white"></div>
             <button
                 className={`w-[22px] ${currentLocale === 'no'
                     ? 'font-semibold hover:underline'

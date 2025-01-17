@@ -6,7 +6,7 @@ export default function NavBar() {
     const t = useTranslations('NavBar');
 
     return (
-        <div className="w-full py-5 max-w-[1280px] m-auto flex justify-between items-center">
+        <div className="w-full py-5 m-auto flex justify-between items-center">
             <h1 className="text-2xl font-semibold">
                 1dev
             </h1>
