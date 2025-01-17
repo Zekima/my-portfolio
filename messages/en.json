@@ -1,5 +1,10 @@
 {
     "HomePage": {
       "title": "Hello world!"
+    },
+    "NavBar": {
+        "p1": "Projects",
+        "p2": "Education",
+        "p3": "Connect"
     }
   }

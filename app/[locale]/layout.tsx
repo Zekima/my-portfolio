@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import { Inter } from "next/font/google";
 import { Providers as ThemeProvider } from '../providers';
 import '../globals.css';
+import NavBar from '@/components/NavBar';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default async function LocaleLayout({
             <body className={`${inter.className} antialiased`}>
                 <NextIntlClientProvider messages={messages}>
                     <ThemeProvider>
+                        <NavBar/>                 
                         {children}
                     </ThemeProvider>
                 </NextIntlClientProvider>

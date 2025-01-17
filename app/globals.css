@@ -8,24 +8,24 @@ body {
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #191919;
+  --foreground: #fff;
 }
 
 .light {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ededed;
+  --foreground: #000;
 }
 
 .dark .theme-switcher {
   background-image: url('../public/icons/dark-theme-icon.svg');
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 
 .light .theme-switcher {
   background-image: url('../public/icons/light-theme-icon.svg');
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 

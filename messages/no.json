@@ -1,5 +1,10 @@
 {
     "HomePage": {
       "title": "Hei verden!"
+    },
+    "NavBar": {
+        "p1": "Prosjekter",
+        "p2": "Utdanning",
+        "p3": "Kontakt"
     }
   }
