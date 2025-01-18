@@ -4,7 +4,7 @@ export default function EducationSection() {
     const t = useTranslations('HomePage.Education');
     const NotableGrades = t.raw("NotableGrades.Items")
     return (
-        <div className="flex flex-col space-y-24">
+        <div className="flex flex-col space-y-24" id="education">
             <div>
                 <p className="text-4xl">{t("Title")}</p>
                 <div className="border-b-2 py-3" />

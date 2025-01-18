@@ -35,6 +35,11 @@ body {
   width: 25px;
 }
 
-.border-b-2 {
+.border-b-2, border {
   border-color: var(--border-color);
+}
+
+input, textarea  {
+  background-color: var(--secondary-color);
+  border-color: var(--foreground);
 }

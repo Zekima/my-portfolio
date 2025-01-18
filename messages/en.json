@@ -21,7 +21,15 @@
             "Title": "Projects"
         },
         "Connect": {
-            "Title": "Connect"
+            "Title": "Connect",
+            "P1": "Got a new idea you want to explore or simply want to chat? Drop me an email, and I'll get back to you within a day!",
+            "P2": "Not a fan of contact forms? You can reach me directly at ",
+            "Name": "Name",
+            "NamePlaceholder": "John Doe",
+            "Email": "Email",
+            "EmailPlaceholder": "johndoe@gmail.com",
+            "Message": "Message",
+            "Submit": "Submit Form"
         }
     },
     "NavBar": {

@@ -4,7 +4,7 @@ export default function ProjectsSection() {
     const t = useTranslations('HomePage.Projects');
 
     return (
-        <div className="flex flex-col space-y-24">
+        <div className="flex flex-col space-y-24" id="projects">
             <div>
                 <p className="text-4xl">{t("Title")}</p>
                 <div className="border-b-2 py-3" />

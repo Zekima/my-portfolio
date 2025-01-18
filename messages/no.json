@@ -21,7 +21,15 @@
             "Title": "Prosjekter"
         },
         "Connect": {
-            "Title": "Kontakt"
+            "Title": "Kontakt",
+            "P1": "Har du en ny idé du vil utforske, eller vil du bare slå av en prat? Send meg en e-post, så svarer jeg innen en dag!",
+            "P2": "Ikke fan av kontaktskjemaer? Du kan nå meg direkte på ",
+            "Name": "Navn",
+            "NamePlaceholder": "Ola Nordmann",
+            "Email": "E-post",
+            "EmailPlaceholder": "olanordmann@gmail.com",
+            "Message": "Melding",
+            "Submit": "Send Inn"
         }
     },
     "NavBar": {

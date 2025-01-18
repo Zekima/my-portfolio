@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
 import ThemeSwitcher from "./ThemeSwitcher";
+import Link from "next/link";
 
 export default function NavBar() {
     const t = useTranslations('NavBar');
@@ -11,9 +12,9 @@ export default function NavBar() {
                 1dev
             </h1>
             <div className="text-lg flex gap-4">
-                <p>{t("Projects")}</p>
-                <p>{t("Education")}</p>
-                <p>{t("Connect")}</p>
+                <Link href="/#projects"><p>{t("Projects")}</p></Link>
+                <Link href="/#education"><p>{t("Education")}</p></Link>
+                <Link href="/#connect"><p>{t("Connect")}</p></Link>
             </div>
             <div className="flex gap-4">
                 <ThemeSwitcher />
