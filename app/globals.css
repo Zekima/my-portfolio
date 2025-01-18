@@ -10,11 +10,17 @@ body {
 .dark {
   --background: #191919;
   --foreground: #fff;
+  --primary-color: #cfd6ff;
+  --secondary-color: #313131;
+  --border-color: #fff;
 }
 
 .light {
   --background: #ededed;
   --foreground: #000;
+  --primary-color: #cfd6ff;
+  --secondary-color: #e0e0e0;
+  --border-color: #000
 }
 
 .dark .theme-switcher {
@@ -29,3 +35,6 @@ body {
   width: 25px;
 }
 
+.border-b-2 {
+  border-color: var(--border-color);
+}

@@ -5,7 +5,7 @@ import { routing } from '@/i18n/routing';
 import { Inter } from "next/font/google";
 import { Providers as ThemeProvider } from '../providers';
 import '../globals.css';
-import NavBar from '@/components/NavBar';
+import NavBar from '@/components/NavBar/NavBar';
 
 const inter = Inter({ subsets: ["latin"] });
 

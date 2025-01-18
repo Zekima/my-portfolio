@@ -1,11 +1,26 @@
 {
     "HomePage": {
-      "heroTitle": "Hi, I'm Christian",
-      "heroSubtitle": "I craft thoughtful digital experiences. Focused on Next.js, design, and functionality."
+        "Hero": {
+            "Title": "Hi, I'm Christian",
+            "Subtitle": "I craft thoughtful digital experiences. Focused on Next.js, design, and functionality."
+        },
+        "Education": {
+            "Title": "Education",
+            "Grade": "Bachelor's degree in IT and Information Systems",
+            "GraduationDate": "June 2024",
+            "NotableGrades": {
+                "Title": "Highlighted Grades",
+                "Items": [
+                    "Bachelor thesis IT and Information Systems",
+                    "Special Syllabus (React JS)",
+                    "Object-oriented programming 2"
+                ]
+            }
+        }
     },
     "NavBar": {
-        "p1": "Projects",
-        "p2": "Education",
-        "p3": "Connect"
+        "Projects": "Projects",
+        "Education": "Education",
+        "Connect": "Connect"
     }
-  }
+}

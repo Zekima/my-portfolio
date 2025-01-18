@@ -1,11 +1,26 @@
 {
     "HomePage": {
-        "heroTitle": "Hei, jeg er Christian",
-        "heroSubtitle": "Jeg lager gjennomtenkte digitale opplevelser med fokus på Next.js, design og funksjonalitet."
-      },
+        "Hero": {
+            "Title": "Hei, jeg er Christian",
+            "Subtitle": "Jeg lager gjennomtenkte digitale opplevelser med fokus på Next.js, design og funksjonalitet."
+        },
+        "Education": {
+            "Title": "Utdanning",
+            "Grade": "Bachelor i IT og Informasjonssystemer",
+            "GraduationDate": "Juni. 2024",
+            "NotableGrades": {
+                "Title": "Fremhevede karakterer",
+                "Items": [
+                    "Bacheloroppgave i IT og Informasjonssystemer",
+                    "Spesialpensum (React JS)",
+                    "Objektorientert programmering 2"
+                ]
+            }
+        }
+    },
     "NavBar": {
-        "p1": "Prosjekter",
-        "p2": "Utdanning",
-        "p3": "Kontakt"
+        "Projects": "Prosjekter",
+        "Education": "Utdanning",
+        "Connect": "Kontakt"
     }
-  }
+}

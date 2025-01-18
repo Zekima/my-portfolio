@@ -11,9 +11,9 @@ export default function NavBar() {
                 1dev
             </h1>
             <div className="text-lg flex gap-4">
-                <p>{t("p1")}</p>
-                <p>{t("p2")}</p>
-                <p>{t("p3")}</p>
+                <p>{t("Projects")}</p>
+                <p>{t("Education")}</p>
+                <p>{t("Connect")}</p>
             </div>
             <div className="flex gap-4">
                 <ThemeSwitcher />
