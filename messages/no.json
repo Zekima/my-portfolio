@@ -16,6 +16,12 @@
                     "Objektorientert programmering 2"
                 ]
             }
+        },
+        "Projects": {
+            "Title": "Prosjekter"
+        },
+        "Connect": {
+            "Title": "Kontakt"
         }
     },
     "NavBar": {

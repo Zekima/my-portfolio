@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import { Providers as ThemeProvider } from '../providers';
 import '../globals.css';
 import NavBar from '@/components/NavBar/NavBar';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +39,8 @@ export default async function LocaleLayout({
                         </NextIntlClientProvider>
                     </div>
                 </div>
+                <Footer />
+
             </body>
         </html>
     );

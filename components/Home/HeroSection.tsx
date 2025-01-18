@@ -12,8 +12,8 @@ export default function HeroSection() {
                     {t('Subtitle')}
                 </p>
             </div>
-            <div className="md:w-1/2 w-full flex justify-center">
-                <img src="/images/abstract-shapes.webp" alt="" className="w-[600px] h-[615px]" />
+            <div className="md:w-1/2 w-full flex justify-end">
+                <img src="/images/abstract-shapes.webp" alt="Abstract Shapes" className="w-[600px] h-[615px] object-contain" />
             </div>
         </div>
     );

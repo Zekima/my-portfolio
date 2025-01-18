@@ -16,6 +16,12 @@
                     "Object-oriented programming 2"
                 ]
             }
+        },
+        "Projects": {
+            "Title": "Projects"
+        },
+        "Connect": {
+            "Title": "Connect"
         }
     },
     "NavBar": {
