@@ -36,5 +36,15 @@
         "Projects": "Projects",
         "Education": "Education",
         "Connect": "Connect"
+    },
+    "Projects": {
+        "DugnadNett": {
+            "Title": "DugnadNett",
+            "Subtitle": "Bachelor Project",
+            "Description": "This project developed a digital platform to organize volunteer work, with real-time communication, filtering, and a central overview of local volunteer activities.",
+            "Statement": "How can a web application improve volunteer organization by overcoming the limitations of social media?",
+            "Reflection": "Through the project, I have developed a deeper understanding of coding and team communication, especially how to effectively discuss and provide feedback on code. I have learned to express technical solutions clearly and receive constructive criticism, which has been crucial in improving code quality and collaboration between team members.",
+            "SourceCode": "Source Code"
+        }
     }
 }
