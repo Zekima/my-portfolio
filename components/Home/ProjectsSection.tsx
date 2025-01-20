@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 export default function ProjectsSection() {
     const t = useTranslations('HomePage.Projects');
@@ -10,26 +11,26 @@ export default function ProjectsSection() {
                 <div className="border-b-2 py-3" />
             </div>
 
-            <div className="bg-secondary w-full h-96 flex gap-4 ">
-                <div className="w-1/2">
-                    <img src="/images/dugnadnett.webp" alt="" className="h-full"/>
+            <div className="bg-secondary w-full h-auto lg:h-96 flex gap-4 flex-col lg:flex-row p-4 lg:p-0">
+                <div className="lg:w-1/2">
+                    <img src="/images/dugnadnett.webp" alt="" className="h-full object-contain	"/>
                 </div>
-                <div className="w-1/2 pt-16 space-y-6 pr-16">
+                <div className="lg:w-1/2 pt-0 lg:pt-16 flex flex-col gap-6 pr-0 lg:pr-16">
                     <p className="text-5xl font-medium">DugnadNett</p>
                     <p className="text-xl ">En digital plattform utviklet for å gjøre organisering av dugnader enklere og mer effektiv. Løsningen tilbyr sanntidskommunikasjon, smarte filterfunksjoner og en sentral oversikt over lokale dugnader.</p>
-                    <button className="bg-primary py-3 px-4 text-lg font-medium text-black">Les mer -{">"}</button>
+                    <Link href="/projects/dugnadnett" className="bg-primary w-fit py-3 px-4 text-lg font-medium text-black">Les mer -{">"}</Link>
                 </div>
 
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+            {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
                 <div className="bg-secondary h-64 flex justify-center items-center">
                 </div>
                 <div className="bg-secondary h-64 flex justify-center items-center">
                 </div>
                 <div className="bg-secondary h-64 flex justify-center items-center">
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
