@@ -36,7 +36,7 @@ export default function Page() {
                     <div className="flex gap-4 pt-4 flex-wrap text-xl">
                         <div className="flex gap-2 underline items-center ">
                             <img src="/icons/pdf-icon.png" alt="PDF icon" width={24} />
-                            <Link href={"/files/DugnadNett.pdf"}>DugnadNett.pdf</Link>
+                            <Link href={"/files/DugnadNett.pdf"} className="hover:bg-secondary">DugnadNett.pdf</Link>
                         </div>
 
                         <div className="flex gap-2 items-center underline">

@@ -3,6 +3,7 @@ import LocaleSwitcher from "./LocaleSwitcher";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import MenuButton from "./MenuButton";
 
 export default function NavBar() {
     const t = useTranslations('NavBar');
@@ -10,7 +11,8 @@ export default function NavBar() {
     return (
         <div className="w-full py-5 m-auto flex justify-between items-center">
             <div className="flex gap-4 items-center">
-                <Menu className="flex sm:hidden" size={32} />
+                <MenuButton />
+
                 <Link href={"/"}>
                     <h1 className="text-2xl font-semibold">
                         1dev
