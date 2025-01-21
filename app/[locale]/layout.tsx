@@ -7,8 +7,15 @@ import { Providers as ThemeProvider } from '../providers';
 import '../globals.css';
 import NavBar from '@/components/NavBar/NavBar';
 import Footer from '@/components/Footer';
+import type { Metadata } from 'next'
+
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+    title: '1dev - Portefølje',
+    description: 'Velkommen til min portefølje. Jeg er en IT-utdannet utvikler med lidenskap for kreative og tekniske løsninger. Utforsk prosjektene mine og ta kontakt for samarbeid!',
+}
 
 export default async function LocaleLayout({
     children,
