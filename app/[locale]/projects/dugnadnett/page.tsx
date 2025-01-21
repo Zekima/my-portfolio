@@ -8,7 +8,7 @@ export default function Page() {
     return (
         <div className="pb-72 space-y-24 mt-12">
             <div className="w-full h-[400px] bg-primary clear-start flex justify-center">
-                <Image src="/images/dugnadnett-1.png" alt="DugnadNett Mockup" className="object-contain" />
+                <Image src="/images/dugnadnett-1.png" alt="DugnadNett Mockup" width={690} height={400} className="object-contain" />
             </div>
             <div className="flex flex-col lg:flex-row gap-y-16 ">
                 <div className="space-y-4 lg:w-1/2">
@@ -31,7 +31,7 @@ export default function Page() {
                     </div>
                     <div className="flex gap-4 pt-4 flex-wrap text-xl">
                         <div className="flex gap-2 underline items-center ">
-                            <Image src="/icons/pdf-icon.png" alt="PDF icon" width={24} />
+                            <img src="/icons/pdf-icon.png" alt="PDF icon" width={24} />
                             <Link href={"/files/DugnadNett.pdf"} className="hover:bg-secondary">DugnadNett.pdf</Link>
                         </div>
 
