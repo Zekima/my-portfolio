@@ -1,5 +1,5 @@
 
-import { getUserLocale, setUserLocale } from '@/i18n/locale';
+import { getUserLocale } from '@/i18n/locale';
 import LocaleSwitcherButtons from './LocaleSwitcherButtons';
 
 export default async function LocaleSwitcher() {

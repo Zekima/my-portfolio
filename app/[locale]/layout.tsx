@@ -20,7 +20,7 @@ export default async function LocaleLayout({
 
     const { locale } = await params;
 
-    if (!routing.locales.includes(locale as any)) {
+    if (!routing.locales.includes(locale as 'en' | 'no')) {
         notFound();
     }
 
@@ -40,7 +40,6 @@ export default async function LocaleLayout({
                     </div>
                 </div>
                 <Footer />
-
             </body>
         </html>
     );

@@ -1,5 +1,6 @@
-import { Globe, Github } from "lucide-react"
+import { Github } from "lucide-react"
 import { useTranslations } from "next-intl"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Page() {
@@ -7,7 +8,7 @@ export default function Page() {
     return (
         <div className="pb-72 space-y-24 mt-12">
             <div className="w-full h-[400px] bg-primary clear-start flex justify-center">
-                <img src="/images/dugnadnett-1.png" alt="DugnadNett Mockup" className="object-contain" />
+                <Image src="/images/dugnadnett-1.png" alt="DugnadNett Mockup" className="object-contain" />
             </div>
             <div className="flex flex-col lg:flex-row gap-y-16 ">
                 <div className="space-y-4 lg:w-1/2">
@@ -23,19 +24,14 @@ export default function Page() {
                     <p className="font-medium  text-xl bg-secondary p-4 text-center">
                         {t('Statement')}
                     </p>
-
                     <div className="space-y-2 font-medium">
                         <p className="text-2xl font-light">
                             {t('Reflection')}
                         </p>
                     </div>
-
-
-
-
                     <div className="flex gap-4 pt-4 flex-wrap text-xl">
                         <div className="flex gap-2 underline items-center ">
-                            <img src="/icons/pdf-icon.png" alt="PDF icon" width={24} />
+                            <Image src="/icons/pdf-icon.png" alt="PDF icon" width={24} />
                             <Link href={"/files/DugnadNett.pdf"} className="hover:bg-secondary">DugnadNett.pdf</Link>
                         </div>
 
@@ -43,18 +39,9 @@ export default function Page() {
                             <Github width={28} />
                             <Link href={"https://github.com/Zekima/dugnadnett"} className="hover:bg-secondary">{t('SourceCode')}</Link>
                         </div>
-
                     </div>
-
                 </div>
-
-
-
             </div>
-
-
         </div>
-
-
     )
 }

@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function EducationSection() {
     const t = useTranslations('HomePage.Education');
@@ -12,7 +13,7 @@ export default function EducationSection() {
 
             <div className="flex gap-4 flex-col md:flex-row">
                 <div className="w-full md:w-1/2 bg-secondary h-64 flex justify-center items-center">
-                    <img src="./images/usn-logo.webp" alt="" width={350} className="dark:invert"/>
+                    <Image src="/images/usn-logo.webp" alt="" width={350} height={61} className="dark:invert"/>
                 </div>
                 <div className="w-full md:w-1/2 bg-primary h-64 text-black text-center flex items-center justify-center flex-col gap-4">
                     <p className="text-2xl font-medium max-w-96">{t("Grade")}</p>
