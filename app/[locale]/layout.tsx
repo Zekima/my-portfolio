@@ -12,15 +12,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default async function LocaleLayout({
     children,
-    params
+    params: paramsPromise
 }: {
     children: React.ReactNode;
-    params: { locale: 'en' | 'no' }
+    params: Promise<{ locale: 'en' | 'no' }>;
 }) {
+    const params = await paramsPromise;
+    const { locale } = params;
 
-    const { locale } = await params;
-
-    if (!routing.locales.includes(locale as 'en' | 'no')) {
+    if (!routing.locales.includes(locale)) {
         notFound();
     }
 
@@ -29,8 +29,8 @@ export default async function LocaleLayout({
     return (
         <html lang={locale} suppressHydrationWarning>
             <body className={`${inter.className} antialiased`}>
-                <div className='w-full px-4'>
-                    <div className='max-w-[1280px] m-auto'>
+                <div className="w-full px-4">
+                    <div className="max-w-[1280px] m-auto">
                         <NextIntlClientProvider messages={messages}>
                             <ThemeProvider>
                                 <NavBar />

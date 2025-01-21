@@ -18,7 +18,11 @@
             }
         },
         "Projects": {
-            "Title": "Projects"
+            "Title": "Projects",
+            "DugnadNett": {
+                "Description": "A digital platform developed to make organizing volunteer work easier and more efficient. The solution offers real-time communication, smart filtering features, and a central overview of local volunteer events.",
+                "Button": "Read more ->"
+            }
         },
         "Connect": {
             "Title": "Connect",

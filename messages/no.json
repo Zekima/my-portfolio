@@ -18,7 +18,11 @@
             }
         },
         "Projects": {
-            "Title": "Prosjekter"
+            "Title": "Prosjekter",
+            "DugnadNett": {
+                "Description": "En digital plattform utviklet for å gjøre organisering av dugnader enklere og mer effektiv. Løsningen tilbyr sanntidskommunikasjon, smarte filterfunksjoner og en sentral oversikt over lokale dugnader.",
+                "Button": "Les mer ->"
+            }
         },
         "Connect": {
             "Title": "Kontakt",

@@ -17,8 +17,8 @@ export default function ProjectsSection() {
                 </div>
                 <div className="lg:w-1/2 pt-0 lg:pt-16 flex flex-col gap-6 pr-0 lg:pr-16">
                     <p className="text-5xl font-medium">DugnadNett</p>
-                    <p className="text-xl ">En digital plattform utviklet for å gjøre organisering av dugnader enklere og mer effektiv. Løsningen tilbyr sanntidskommunikasjon, smarte filterfunksjoner og en sentral oversikt over lokale dugnader.</p>
-                    <Link href="/projects/dugnadnett" className="bg-primary w-fit py-3 px-4 text-lg font-medium text-black">Les mer -{">"}</Link>
+                    <p className="text-xl ">{t('DugnadNett.Description')}</p>
+                    <Link href="/projects/dugnadnett" className="bg-primary w-fit py-3 px-4 text-lg font-medium text-black">{t('DugnadNett.Button')}</Link>
                 </div>
             </div>
 
