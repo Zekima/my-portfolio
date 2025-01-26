@@ -8,10 +8,11 @@ body {
 }
 
 .dark {
-  --background: #191919;
+  /* --background: #191919;  */
+  --background: #000; 
   --foreground: #fff;
-  --primary-color: #cfd6ff;
-  --secondary-color: #313131;
+  --primary-color: #ce95fe;
+  --secondary-color: #151515;
   --border-color: #fff;
 }
 

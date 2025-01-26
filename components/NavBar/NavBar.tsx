@@ -18,9 +18,24 @@ export default function NavBar() {
                 </Link>
             </div>
             <div className="text-lg flex-grow  justify-center gap-4 hidden sm:flex">
-                <Link href="/#projects"><p>{t("Projects")}</p></Link>
-                <Link href="/#education"><p>{t("Education")}</p></Link>
-                <Link href="/#connect"><p>{t("Connect")}</p></Link>
+                <Link href="/#projects">
+                    <p className="relative inline-block group">
+                        {t("Projects")}
+                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                    </p>
+                </Link>
+                <Link href="/#education">
+                    <p className="relative inline-block group">
+                        {t("Education")}
+                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                    </p>
+                </Link>
+                <Link href="/#connect">
+                    <p className="relative inline-block group">
+                        {t("Connect")}
+                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground transition-all duration-200 ease-in-out group-hover:w-full"></span>
+                    </p>
+                </Link>
             </div>
             <div className="flex gap-4">
                 <ThemeSwitcher />
