@@ -19,7 +19,7 @@ jobs:
         username: ${{ secrets.VPS_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /my-portfolio
+          cd my-portfolio/
           git pull
           npm install
           npm run build
