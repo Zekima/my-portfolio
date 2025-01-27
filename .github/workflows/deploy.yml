@@ -21,7 +21,9 @@ jobs:
         script: |
           export NVM_DIR="/root/.nvm"
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+           
           cd my-portfolio/
+
           git pull
           npm install
           npm run build
