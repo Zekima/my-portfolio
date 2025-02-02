@@ -12,7 +12,7 @@ export default function Page() {
 
             <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
                 <header className="space-y-6 lg:w-1/2">
-                    <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+                    <h1 className="text-4xl md:text-5xl font-black leading-tight">
                         DugnadNett
                     </h1>
                     <p className="text-2xl md:text-3xl text-muted-foreground">

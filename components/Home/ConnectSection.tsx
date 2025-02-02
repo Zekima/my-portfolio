@@ -61,7 +61,7 @@ export default function ConnectSection() {
                             <textarea name="message" className="border p-2 min-h-32"></textarea>
                         </div>
 
-                        <button type="submit" className="bg-primary py-3 text-black font-medium text-lg">{t("Submit")}</button>
+                        <button type="submit" className="bg-primary py-3 text-black font-black text-lg">{t("Submit")}</button>
                     </form>
                 </div>
             </div>

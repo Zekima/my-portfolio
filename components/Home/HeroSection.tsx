@@ -5,7 +5,7 @@ export default function HeroSection() {
     return (
         <div className="w-full flex items-center py-12 xl:flex-row flex-col space-y-6 z-10" id="hero">
             <div className="md:w-1/2 w-full space-y-6 text-center xl:text-left">
-                <h1 className="text-6xl font-medium">
+                <h1 className="text-6xl font-black">
                     {t('Title')}
                 </h1>
                 <p className="text-4xl font-light">
