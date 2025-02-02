@@ -26,25 +26,27 @@ export default function LocaleSwitcherButtons({ currentLocale }: { currentLocale
     };
 
     return (
-        <div className="flex space-x-2 items-center">
+        <div className="flex space-x-2 items-center ">
             <button
-                className={`w-[22px] ${currentLocale === 'en'
-                    ? 'font-semibold hover:underline'
-                    : 'font-extralight hover:underline'
+                className={`w-[22px] relative group ${currentLocale === 'en'
+                    ? 'font-semibold'
+                    : 'font-extralight'
                     }`}
                 onClick={() => switchLocale('en')}
             >
                 EN
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground transition-all duration-200 ease-in-out group-hover:w-full"></span>
             </button>
             <div className="border-l-4  border-dotted h-[17px] border-black dark:border-white"></div>
             <button
-                className={`w-[22px] ${currentLocale === 'no'
-                    ? 'font-semibold hover:underline'
-                    : 'font-extralight hover:underline'
+                className={`w-[22px] relative group ${currentLocale === 'no'
+                    ? 'font-semibold'
+                    : 'font-extralight'
                     }`}
                 onClick={() => switchLocale('no')}
             >
                 NO
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground transition-all duration-200 ease-in-out group-hover:w-full"></span>
             </button>
         </div>
     );
