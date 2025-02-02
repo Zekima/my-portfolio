@@ -50,11 +50,11 @@ export default function ConnectSection() {
                     <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full lg:w-4/5 text-lg">
                         <div className="w-full flex flex-col gap-1">
                             <label htmlFor="name">{t("Name")}</label>
-                            <input type="text" name="name" placeholder={t("NamePlaceholder")} className="border p-2" />
+                            <input type="text" name="name" placeholder={t("NamePlaceholder")} className="border p-2 placeholder:text-gray-500" />
                         </div>
                         <div className="w-full flex flex-col gap-1">
                             <label htmlFor="email">{t("Email")}</label>
-                            <input type="email" name="email" placeholder={t("EmailPlaceholder")} className="border p-2" />
+                            <input type="email" name="email" placeholder={t("EmailPlaceholder")} className="border p-2 placeholder:text-gray-500" />
                         </div>
                         <div className="w-full flex flex-col gap-1">
                             <label htmlFor="message">{t("Message")}</label>
