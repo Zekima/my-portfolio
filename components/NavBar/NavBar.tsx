@@ -8,7 +8,7 @@ export default function NavBar() {
     const t = useTranslations('NavBar');
 
     return (
-        <div className="w-full py-5 m-auto flex justify-between items-center">
+        <div className="w-full py-5 m-auto flex justify-between items-center bg-background">
             <div className="flex gap-4 items-center">
                 <MenuButton />
                 <Link href={"/"}>
