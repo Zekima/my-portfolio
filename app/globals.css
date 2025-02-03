@@ -41,7 +41,9 @@ body {
 
 input, textarea  {
   background-color: var(--secondary-color);
-  border-color: var(--foreground);
+  border-color: var(--foreground);    
 }
 
-
+* :focus {
+  outline: 4px solid color-mix(in srgb, var(--primary-color) 70%, black); 
+}

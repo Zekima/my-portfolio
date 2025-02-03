@@ -18,7 +18,7 @@ export default function ProjectsSection() {
                 <div className="lg:w-1/2 pt-0 lg:pt-16 flex flex-col gap-6 pr-0 lg:pr-16">
                     <p className="text-5xl font-black">DugnadNett</p>
                     <p className="text-xl ">{t('DugnadNett.Description')}</p>
-                    <Link href="/projects/dugnadnett" className="bg-primary w-fit py-3 px-4 text-lg font-black text-black transition-all duration-100 hover:opacity-[85%]">{t('DugnadNett.Button')}</Link>
+                    <Link href="/projects/dugnadnett" tabIndex={0} className="bg-primary w-fit py-3 px-4 text-lg font-black text-black transition-all duration-100 hover:opacity-[85%]">{t('DugnadNett.Button')}</Link>
                 </div>
             </div>
 

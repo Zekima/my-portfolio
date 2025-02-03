@@ -1,3 +1,4 @@
+import ImageGallery from "@/components/ImageGallery"
 import { Github } from "lucide-react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
@@ -5,6 +6,24 @@ import Link from "next/link"
 
 export default function Page() {
     const t = useTranslations('Projects.DugnadNett')
+
+    const images = [
+        'Browse.png',
+        'Create.png',
+        'Dugnad.png',
+        'Settings.png',
+        'Settings2.png',
+        'Profile.png',
+        'Landing.png',
+        'MyPage.png',
+        'Groupchat.png',
+        'Login.png',
+        'Map.png',
+        'OwnerActions.png',
+        'Participants.png',
+        'Register.png',
+        'Chat.png',
+    ];
 
     return (
         <article className="pb-24 md:pb-36 space-y-16 md:space-y-24 mt-24">
@@ -41,17 +60,17 @@ export default function Page() {
                     </section>
 
                     <nav className="pt-8">
-                        <ul className="flex flex-col gap-4 text-lg">
+                        <ul className="flex flex-col gap-8 text-lg">
                             <li>
                                 <Link
                                     href="/files/DugnadNett.pdf"
-                                    className="flex items-center gap-3 hover:bg-primary/10 p-3 rounded-lg transition-colors"
+                                    className="flex items-center gap-3  rounded-lg"
                                 >
                                     <img
                                         src="/icons/pdf-icon.png"
                                         alt=""
                                         aria-hidden="true"
-                                        className=" h-6"
+                                        className="w-5 h-6"
                                     />
                                     <span className="hover:underline">DugnadNett</span>
                                 </Link>
@@ -61,7 +80,7 @@ export default function Page() {
                                     href="https://github.com/Zekima/dugnadnett"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-3 hover:bg-primary/10 p-3 rounded-lg transition-colors"
+                                    className="flex items-center gap-3  rounded-lg"
                                 >
                                     <Github className="w-6 h-6" />
                                     <span className="hover:underline">{t("SourceCode")}</span>
@@ -78,41 +97,7 @@ export default function Page() {
                     </h2>
                 </header>
 
-                <div className="">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {[
-                            'Browse.png',
-                            'Create.png',
-                            'Dugnad.png',
-                            'Settings.png',
-                            'Settings2.png',
-                            'Profile.png',
-                            'Landing.png',
-                            'MyPage.png',
-                            'Groupchat.png',
-                            'Login.png',
-                            'Map.png',
-                            'OwnerActions.png',
-                            'Participants.png',
-                            'Register.png',
-                            'Chat.png',
-
-                        ].map((filename) => (
-                            <div
-                                key={filename}
-                                className="relative aspect-video bg-secondary rounded-lg  overflow-hidden hover:shadow-lg transition-all"
-                            >
-                                <Image
-                                    src={`/images/projects/dugnadnett/${filename}`}
-                                    alt={`DugnadNett ${filename.replace('.png', '')} screen`}
-                                    fill
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                    className="object-contain p-2"
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                <ImageGallery projectName="dugnadnett" images={images} />
             </div>
         </article>
     )
