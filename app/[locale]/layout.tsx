@@ -7,6 +7,7 @@ import { Providers as ThemeProvider } from '../providers';
 import '../globals.css';
 import NavBar from '@/components/NavBar/NavBar';
 import Footer from '@/components/Footer';
+import Script from "next/script";
 import type { Metadata } from 'next'
 
 
@@ -35,6 +36,13 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale} suppressHydrationWarning>
+            <head>
+                <Script
+                    defer
+                    data-domain="1dev.no"
+                    src="https://plausible.io/js/script.js"
+                />
+            </head>
             <body className={`${inter.className} antialiased`}>
                 <div className="w-full px-4">
                     <div className="max-w-[1280px] m-auto">
