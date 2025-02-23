@@ -13,7 +13,7 @@ export default function HeroSection() {
                 </p>
             </div>
             <div className="md:w-1/2 w-full flex justify-end">
-                <img src="/images/face.webp" alt="Abstract Shapes" className="w-[600px] h-[615px] object-contain" />
+                <img src="/images/face3.webp" alt="" className="w-[600px] h-[615px] object-contain" />
             </div>
         </div>
     );

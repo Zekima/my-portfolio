@@ -9,5 +9,5 @@ export default function ThemeSwitcher() {
         setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
     };
 
-    return <button className="theme-switcher" onClick={handleThemeChange}/>
+    return <button className="theme-switcher outline-none" onClick={handleThemeChange}/>
 }
