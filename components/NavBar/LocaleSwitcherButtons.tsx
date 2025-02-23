@@ -28,10 +28,11 @@ export default function LocaleSwitcherButtons({ currentLocale }: { currentLocale
     return (
         <div className="flex space-x-2 items-center ">
             <button
-                className={`w-[22px] relative group ${currentLocale === 'en'
-                    ? 'font-semibold'
-                    : 'font-extralight'
-                    }`}
+                className={`w-[22px] relative group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                    currentLocale === 'en'
+                        ? 'font-semibold'
+                        : 'font-extralight'
+                }`}
                 onClick={() => switchLocale('en')}
             >
                 EN
@@ -39,10 +40,11 @@ export default function LocaleSwitcherButtons({ currentLocale }: { currentLocale
             </button>
             <div className="border-l-4  border-dotted h-[17px] border-black dark:border-white"></div>
             <button
-                className={`w-[22px] relative group ${currentLocale === 'no'
-                    ? 'font-semibold'
-                    : 'font-extralight'
-                    }`}
+                className={`w-[22px] relative group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
+                    currentLocale === 'no'
+                        ? 'font-semibold'
+                        : 'font-extralight'
+                }`}
                 onClick={() => switchLocale('no')}
             >
                 NO

@@ -49,7 +49,9 @@ export default async function LocaleLayout({
                         <NextIntlClientProvider messages={messages}>
                             <ThemeProvider>
                                 <NavBar />
-                                {children}
+                                <main id="main-content" tabIndex={-1}>
+                                    {children}
+                                </main>
                             </ThemeProvider>
                         </NextIntlClientProvider>
                     </div>

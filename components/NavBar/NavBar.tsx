@@ -8,39 +8,54 @@ export default function NavBar() {
     const t = useTranslations('NavBar');
 
     return (
-        <div className="w-full py-5 m-auto flex justify-between items-center bg-background">
-            <div className="flex gap-4 items-center">
-                <MenuButton />
-                <Link href={"/"}>
-                    <h1 className="text-2xl font-semibold">
-                        1dev
-                    </h1>
-                </Link>
-            </div>
-            <div className="text-lg flex-grow  justify-center gap-4 hidden sm:flex">
-                <Link href="/#projects" tabIndex={0}>
-                    <p className="relative inline-block group">
-                        {t("Projects")}
-                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground transition-all duration-200 ease-in-out group-hover:w-full"></span>
-                    </p>
-                </Link>
-                <Link href="/#education" tabIndex={0}>
-                    <p className="relative inline-block group">
-                        {t("Education")}
-                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground transition-all duration-200 ease-in-out group-hover:w-full"></span>
-                    </p>
-                </Link>
-                <Link href="/#connect" tabIndex={0}>
-                    <p className="relative inline-block group"> 
-                        {t("Connect")}
-                        <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground transition-all duration-200 ease-in-out group-hover:w-full"></span>
-                    </p>
-                </Link>
-            </div>
-            <div className="flex gap-4">
-                <ThemeSwitcher />
-                <LocaleSwitcher />
-            </div>
-        </div>
-    )
+        <header role="banner" className="w-full bg-background">
+            {/* Skip to main content link - hidden by default, visible on focus */}
+            <a 
+                href="#main-content" 
+                className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-background focus:text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+                {t('SkipToMain')}
+            </a>
+
+            <nav 
+                className="w-full py-5 m-auto flex justify-between items-center"
+                role="navigation"
+                aria-label={t('MainNavigation')}
+            >
+                <div className="flex gap-4 items-center ">
+                    <MenuButton />
+                    <Link href="/" aria-label={t('HomeLink')} className="focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                        <span className="text-2xl font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                            1dev
+                        </span>
+                    </Link>
+                </div>
+
+                <div className="text-lg flex-grow justify-center gap-4 hidden sm:flex">
+                    {[
+                        { href: '/#projects', label: t('Projects') },
+                        { href: '/#education', label: t('Education') },
+                        { href: '/#connect', label: t('Connect') }
+                    ].map(({ href, label }) => (
+                        <Link 
+                            key={href}
+                            href={href}
+                            className="relative inline-block group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
+                            aria-label={`${label}Section`}
+                        >
+                            <span className="relative inline-block">
+                                {label}
+                                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-foreground transition-all duration-200 ease-in-out group-hover:w-full group-focus:w-full"></span>
+                            </span>
+                        </Link>
+                    ))}
+                </div>
+
+                <div className="flex gap-4" role="group" aria-label={t('SiteControls')}>
+                    <ThemeSwitcher />
+                    <LocaleSwitcher />
+                </div>
+            </nav>
+        </header>
+    );
 }

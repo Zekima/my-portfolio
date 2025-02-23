@@ -33,10 +33,22 @@
             "Email": "E-post",
             "EmailPlaceholder": "olanordmann@gmail.com",
             "Message": "Melding",
-            "Submit": "Send Inn"
+            "Submit": "Send Inn",
+            "EmailAriaLabel": "Send e-post til Christian Ledaal",
+            "FormAriaLabel": "Kontaktskjema",
+            "Submitting": "Sender...",
+            "SubmitSuccess": "Takk for meldingen! Jeg svarer så fort jeg kan.",
+            "SubmitError": "Beklager, noe gikk galt. Vennligst prøv igjen eller send meg en e-post direkte."
         }
     },
     "NavBar": {
+        "SkipToMain": "Hopp til hovedinnhold",
+        "MainNavigation": "Hovednavigasjon",
+        "HomeLink": "Gå til forsiden",
+        "ProjectsSection": "Gå til prosjekter",
+        "EducationSection": "Gå til utdanning",
+        "ConnectSection": "Gå til kontakt",
+        "SiteControls": "Nettstedskontroller",
         "Projects": "Prosjekter",
         "Education": "Utdanning",
         "Connect": "Kontakt"

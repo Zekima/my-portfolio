@@ -33,13 +33,25 @@
             "Email": "Email",
             "EmailPlaceholder": "johndoe@gmail.com",
             "Message": "Message",
-            "Submit": "Submit Form"
+            "Submit": "Submit Form",
+            "EmailAriaLabel": "Send email to Christian Ledaal",
+            "FormAriaLabel": "Contact form",
+            "Submitting": "Submitting...",
+            "SubmitSuccess": "Thanks for your message! I'll respond as soon as possible.",
+            "SubmitError": "Sorry, something went wrong. Please try again or email me directly."
         }
     },
     "NavBar": {
         "Projects": "Projects",
         "Education": "Education",
-        "Connect": "Connect"
+        "Connect": "Connect",
+        "SkipToMain": "Skip to main content",
+        "MainNavigation": "Main navigation",
+        "HomeLink": "Go to home page",
+        "ProjectsSection": "Go to projects section",
+        "EducationSection": "Go to education section",
+        "ConnectSection": "Go to connect section",
+        "SiteControls": "Site controls"
     },
     "Projects": {
         "DugnadNett": {

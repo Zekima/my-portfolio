@@ -18,7 +18,7 @@ body {
 .light {
   --background: #ededed;
   --foreground: #000;
-  --primary-color: #cfd6ff;
+  --primary-color: #95c8fe;
   --secondary-color: #e0e0e0;
   --border-color: #000
 }
@@ -42,8 +42,5 @@ body {
 input, textarea  {
   background-color: var(--secondary-color);
   border-color: var(--foreground);    
-}
-
-* :focus {
-  outline: 2px solid color-mix(in srgb, var(--primary-color) 70%, black); 
+  border-width: 2px !important;
 }

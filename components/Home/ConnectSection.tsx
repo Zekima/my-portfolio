@@ -7,10 +7,12 @@ import { Loader2 } from "lucide-react";
 export default function ConnectSection() {
     const t = useTranslations("HomePage.Connect");
     const [isLoading, setIsLoading] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
     async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
         setIsLoading(true);
+        setSubmitStatus('idle');
 
         const form = event.target as HTMLFormElement;
         const formData = new FormData(form);
@@ -29,25 +31,33 @@ export default function ConnectSection() {
                     },
                     body: json,
                 }),
-                new Promise((resolve) => setTimeout(resolve, 1000)), // Minimum 1-second delay
+                new Promise((resolve) => setTimeout(resolve, 1000)),
             ]);
 
             const result = await (submitResponse as Response).json();
             if (result.success) {
-                console.log(result);
+                setSubmitStatus('success');
+                form.reset();
+            } else {
+                setSubmitStatus('error');
             }
         } catch (error) {
             console.error(error);
+            setSubmitStatus('error');
         } finally {
             setIsLoading(false);
         }
     }
 
     return (
-        <div className="flex flex-col space-y-24 pb-72" id="connect">
+        <section 
+            className="flex flex-col space-y-24 pb-72" 
+            id="connect"
+            aria-labelledby="connect-section-title"
+        >
             <div>
-                <p className="text-4xl">{t("Title")}</p>
-                <div className="border-b-2 py-3" />
+                <h2 id="connect-section-title" className="text-4xl">{t("Title")}</h2>
+                <div className="border-b-2 py-3" role="presentation" />
             </div>
 
             <div className="flex gap-4 lg:flex-row flex-col gap-y-24">
@@ -55,7 +65,13 @@ export default function ConnectSection() {
                     <p>{t("P1")}</p>
                     <p>
                         {t("P2")}{" "}
-                        <span className="underline">christianledaal@gmail.com</span>
+                        <a 
+                            href="mailto:christianledaal@gmail.com"
+                        className="underline hover:text-primary focus:text-primary transition-colors focus:bg-black focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                            aria-label={t("EmailAriaLabel") || "Send email to Christian Ledaal"}
+                        >
+                            christianledaal@gmail.com
+                        </a>
                     </p>
                 </div>
 
@@ -63,50 +79,75 @@ export default function ConnectSection() {
                     <form
                         onSubmit={handleSubmit}
                         className="flex flex-col gap-4 w-full lg:w-4/5 text-lg"
+                        aria-label={t("FormAriaLabel") || "Contact form"}
+                        noValidate
                     >
                         <div className="w-full flex flex-col gap-1">
-                            <label htmlFor="name">{t("Name")}</label>
+                            <label htmlFor="name" className="font-medium">{t("Name")}</label>
                             <input
                                 type="text"
+                                id="name"
                                 name="name"
                                 placeholder={t("NamePlaceholder")}
-                                className="border p-2 placeholder:text-gray-500"
+                                    className="border p-2 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
                                 required
+                                aria-required="true"
+                                autoComplete="name"
                             />
                         </div>
                         <div className="w-full flex flex-col gap-1">
-                            <label htmlFor="email">{t("Email")}</label>
+                            <label htmlFor="email" className="font-medium">{t("Email")}</label>
                             <input
                                 type="email"
+                                id="email"
                                 name="email"
                                 placeholder={t("EmailPlaceholder")}
-                                className="border p-2 placeholder:text-gray-500"
+                                className="border p-2 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
                                 required
+                                aria-required="true"
+                                autoComplete="email"
                             />
                         </div>
                         <div className="w-full flex flex-col gap-1">
-                            <label htmlFor="message">{t("Message")}</label>
+                            <label htmlFor="message" className="font-medium">{t("Message")}</label>
                             <textarea
+                                id="message"
                                 name="message"
-                                className="border p-2 min-h-32"
+                                className="border p-2 min-h-32 focus:outline-none focus:ring-2 focus:ring-primary"
                                 required
+                                aria-required="true"
                             ></textarea>
                         </div>
 
                         <button
                             type="submit"
                             disabled={isLoading}
-                            className="bg-primary h-[52px] text-black font-black text-lg transition-all duration-100 hover:opacity-[85%] disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center"
+                            className="bg-primary h-[52px] text-black font-medium text-lg transition-all duration-100 hover:opacity-[85%] disabled:opacity-70 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary flex items-center justify-center"
+                            aria-busy={isLoading}
                         >
                             {isLoading ? (
-                                <Loader2 className="animate-spin h-6 w-6" />
+                                <>
+                                    <Loader2 className="animate-spin h-6 w-6" aria-hidden="true" />
+                                    <span className="sr-only">{t("Submitting")}</span>
+                                </>
                             ) : (
                                 t("Submit")
                             )}
                         </button>
+
+                        {submitStatus === 'success' && (
+                            <p className="text-green-600" role="status">
+                                {t("SubmitSuccess")}
+                            </p>
+                        )}
+                        {submitStatus === 'error' && (
+                            <p className="text-red-600" role="alert">
+                                {t("SubmitError")}
+                            </p>
+                        )}
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
