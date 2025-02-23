@@ -14,9 +14,16 @@ import type { Metadata } from 'next'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: '1dev - Portefølje',
-    description: 'Velkommen til min portefølje. Jeg er en IT-utdannet utvikler med lidenskap for kreative og tekniske løsninger. Utforsk prosjektene mine og ta kontakt for samarbeid!',
-}
+    title: "1dev - Utvikler Portefølje",
+    description: "IT-utdannet utvikler med fokus på kreative, tekniske løsninger. Se mine prosjekter og kontakt meg!",
+    keywords: "utvikler, portefølje, IT, webutvikling, Next.js, frontend, backend, full stack",
+    openGraph: {
+        title: "1dev - Utvikler Portefølje",
+        description: "Kreative og tekniske løsninger fra en IT-utdannet utvikler. Utforsk prosjekter!",
+        url: "https://1dev.no",
+    },
+    robots: { index: true, follow: true },
+};
 
 export default async function LocaleLayout({
     children,
