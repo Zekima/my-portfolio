@@ -1,104 +1,118 @@
-import ImageGallery from "@/components/ImageGallery"
-import { Github } from "lucide-react"
+import { MessageSquare, Map, Filter, Shield, Upload, UserCog } from "lucide-react"
 import { useTranslations } from "next-intl"
-import Image from "next/image"
-import Link from "next/link"
+import ProjectPage from "@/components/ProjectPage"
 
 export default function Page() {
     const t = useTranslations('Projects.DugnadNett')
 
-    const images = [
-        'Browse.png',
-        'Create.png',
-        'Dugnad.png',
-        'Settings.png',
-        'Settings2.png',
-        'Profile.png',
-        'Landing.png',
-        'MyPage.png',
-        'Groupchat.png',
-        'Login.png',
-        'Map.png',
-        'OwnerActions.png',
-        'Participants.png',
-        'Register.png',
-        'Chat.png',
-    ];
+    const features = [
+        {
+            icon: <MessageSquare className="w-8 h-8 text-primary" />,
+            title: t('Features.RealTime.Title'),
+            description: t('Features.RealTime.Description')
+        },
+        {
+            icon: <Map className="w-8 h-8 text-primary" />,
+            title: t('Features.Maps.Title'),
+            description: t('Features.Maps.Description')
+        },
+        {
+            icon: <Filter className="w-8 h-8 text-primary" />,
+            title: t('Features.Filtering.Title'),
+            description: t('Features.Filtering.Description')
+        },
+        {
+            icon: <Shield className="w-8 h-8 text-primary" />,
+            title: t('Features.Auth.Title'),
+            description: t('Features.Auth.Description')
+        },
+        {
+            icon: <UserCog className="w-8 h-8 text-primary" />,
+            title: t('Features.Moderation.Title'),
+            description: t('Features.Moderation.Description')
+        },
+        {
+            icon: <Upload className="w-8 h-8 text-primary" />,
+            title: t('Features.Content.Title'),
+            description: t('Features.Content.Description')
+        }
+    ]
 
     return (
-        <article className="pb-24 md:pb-36 space-y-16 md:space-y-24 mt-24">
-
-
-            <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
-                <header className="space-y-6 lg:w-1/2">
-                    <h1 className="text-4xl md:text-5xl font-black leading-tight">
-                        DugnadNett
-                    </h1>
-                    <p className="text-2xl md:text-3xl text-muted-foreground">
-                        {t("Subtitle")}
-                    </p>
-                </header>
-
-                <div className="lg:w-1/2 space-y-8">
-
-                    <section className="space-y-4">
-                        <p className="text-lg md:text-xl leading-relaxed">
-                            {t('Description')}
-                        </p>
-                    </section>
-
+        <ProjectPage
+            heroImage="/images/projects/dugnadnett/hero-dugnadnett.webp"
+            title={t('Title')}
+            subtitle={t('Subtitle')}
+            description={t('Description')}
+            additionalContent={
+                <>
                     <blockquote className="p-6 bg-secondary rounded-lg border-l-4 border-primary">
                         <p className="text-lg md:text-xl font-medium">
                             {t('Statement')}
                         </p>
                     </blockquote>
-
-                    <section className="space-y-4">
-                        <p className="text-lg md:text-xl leading-relaxed">
-                            {t('Reflection')}
-                        </p>
-                    </section>
-
-                    <nav className="pt-8">
-                        <ul className="flex flex-col gap-8 text-lg">
-                            <li>
-                                <Link
-                                    href="/files/DugnadNett.pdf"
-                                    className="flex items-center gap-3  rounded-lg"
-                                >
-                                    <img
-                                        src="/icons/pdf-icon.png"
-                                        alt=""
-                                        aria-hidden="true"
-                                        className="w-5 h-6"
-                                    />
-                                    <span className="hover:underline">DugnadNett</span>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="https://github.com/Zekima/dugnadnett"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center gap-3  rounded-lg"
-                                >
-                                    <Github className="w-6 h-6" />
-                                    <span className="hover:underline">{t("SourceCode")}</span>
-                                </Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div className="flex flex-col gap-12 lg:gap-24">
-                <header className="space-y-6 lg:w-1/2">
-                    <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground">
-                        {t("ProjectGallery")}
-                    </h2>
-                </header>
-
-                <ImageGallery projectName="dugnadnett" images={images} />
-            </div>
-        </article>
+                    <p className="text-lg md:text-xl leading-relaxed">
+                        {t('Reflection')}
+                    </p>
+                </>
+            }
+            features={features}
+            githubUrl="https://github.com/Zekima/dugnadnett"
+            githubLinkText={t('SourceCode')}
+            galleryTitle={t('ProjectGallery')}
+            gallery={{
+                images: [
+                    {
+                        filename: 'Browse.png',
+                        title: 'Browse',
+                        description: 'Browse',
+                        tags: ['Browse']
+                    },
+                    {
+                        filename: 'Create.png',
+                        title: 'Create',
+                        description: 'Create',
+                        tags: ['Create']
+                    },
+                    {
+                        filename: 'Dugnad.png',
+                        title: 'Dugnad',
+                        description: 'Dugnad',
+                        tags: ['Dugnad']
+                    },
+                    {
+                        filename: 'Settings.png',
+                        title: 'Settings',
+                        description: 'Settings',
+                        tags: ['Settings']
+                    },
+                    {
+                        filename: 'Settings2.png',
+                        title: 'Profile',
+                        description: 'Profile',
+                        tags: ['Profile']
+                    },
+                    {
+                        filename: 'Landing.png',
+                        title: 'Landing',
+                        description: 'Landing',
+                        tags: ['Landing']
+                    },
+                    {
+                        filename: 'MyPage.png',
+                        title: 'MyPage',
+                        description: 'MyPage',
+                        tags: ['MyPage']
+                    },
+                    {
+                        filename: 'Groupchat.png',
+                        title: 'Groupchat',
+                        description: 'Groupchat',
+                        tags: ['Groupchat']
+                    },
+                ],
+                projectName: "dugnadnett"
+            }}
+        />
     )
 }

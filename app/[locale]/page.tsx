@@ -14,9 +14,7 @@ export default function HomePage() {
                     <ConnectSection />
                 </div>
             </div>
-            <div className="absolute inset-0 overflow-hidden z-0">
-                <div className="absolute w-[200vw] h-28 bg-primary   origin-center -translate-x-1/2 -translate-y-1/2 -rotate-[24deg]"></div>
-            </div>
+
         </div>
 
     );

@@ -13,23 +13,27 @@ export default function ProjectsSection() {
             </div>
             <div className="bg-secondary w-full h-auto lg:h-96 flex gap-4 flex-col lg:flex-row p-4 lg:p-0">
                 <div className="lg:w-1/2">
-                    <Image src="/images/dugnadnett-1.png" alt="DugnadNett Mockup" height={385} width={632} className="h-full object-contain"/>
+                    <img src="/images/projects/lisenskode/hero-lisenskode.webp" loading="lazy" alt="Lisenskode Landing Page" height={385} width={600} className="h-full object-cover" />
                 </div>
                 <div className="lg:w-1/2 pt-0 lg:pt-16 flex flex-col gap-6 pr-0 lg:pr-16">
-                    <p className="text-5xl font-black">DugnadNett</p>
-                    <p className="text-xl ">{t('DugnadNett.Description')}</p>
-                    <Link href="/projects/dugnadnett" tabIndex={0} className="bg-primary w-fit py-3 px-4 text-lg font-medium text-black transition-all duration-100 hover:opacity-[85%]">{t('DugnadNett.Button')}</Link>
+                    <p className="text-4xl font-medium">Lisenskode</p>
+                    <p className="text-xl ">{t('Lisenskode.Description')}</p>
+                    <Link href="/projects/lisenskode" tabIndex={0} className="bg-primary w-fit py-3 px-4 text-lg font-medium text-background transition-all duration-100 hover:opacity-[85%] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/10">{t('DugnadNett.Button')}</Link>
                 </div>
+
+            </div>
+            <div className="bg-secondary w-full h-auto lg:h-96 flex gap-4 flex-col lg:flex-row p-4 lg:p-0">
+                <div className="lg:w-1/2">
+                    <img src="/images/projects/dugnadnett/hero-dugnadnett.webp" loading="lazy" alt="Lisenskode Landing Page" height={385} width={600} className="h-full object-cover" />
+                </div>
+                <div className="lg:w-1/2 pt-0 lg:pt-16 flex flex-col gap-6 pr-0 lg:pr-16">
+                    <p className="text-4xl font-medium">DugnadNett</p>
+                    <p className="text-xl ">{t('DugnadNett.Description')}</p>
+                    <Link href="/projects/dugnadnett" tabIndex={0} className="bg-primary w-fit py-3 px-4 text-lg font-medium text-background transition-all duration-100 hover:opacity-[85%] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/10">{t('DugnadNett.Button')}</Link>
+                </div>
+
             </div>
 
-            {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
-                <div className="bg-secondary h-64 flex justify-center items-center">
-                </div>
-                <div className="bg-secondary h-64 flex justify-center items-center">
-                </div>
-                <div className="bg-secondary h-64 flex justify-center items-center">
-                </div>
-            </div> */}
         </div>
     );
 }

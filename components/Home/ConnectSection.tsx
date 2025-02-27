@@ -122,7 +122,7 @@ export default function ConnectSection() {
                         <button
                             type="submit"
                             disabled={isLoading}
-                            className="bg-primary h-[52px] text-black font-medium text-lg transition-all duration-100 hover:opacity-[85%] disabled:opacity-70 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary flex items-center justify-center"
+                            className="bg-primary h-[52px] text-background font-medium text-lg transition-all duration-100 hover:opacity-[85%] disabled:opacity-70 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary flex items-center justify-center"
                             aria-busy={isLoading}
                         >
                             {isLoading ? (

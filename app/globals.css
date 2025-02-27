@@ -10,17 +10,39 @@ body {
 .dark {
   --background: #000; 
   --foreground: #fff;
-  --primary-color: #ce95fe;
   --secondary-color: #151515;
   --border-color: #fff;
+
+  --primary-color: #ce95fe;
+  --primary-50: #f0e1ff;
+  --primary-100: #f4e8ff;
+  --primary-200: #ebd4ff;
+  --primary-300: #dbb3ff;
+  --primary-400: #ce95fe;
+  --primary-500: #af53f9;
+  --primary-600: #9b30ed;
+  --primary-700: #861fd1;
+  --primary-800: #711faa;
+  --primary-900: #5d1a89;
 }
 
 .light {
   --background: #ededed;
   --foreground: #000;
-  --primary-color: #95c8fe;
   --secondary-color: #e0e0e0;
-  --border-color: #000
+  --border-color: #000;
+
+  --primary-color: #153b63;
+  --primary-50: #f1f7fe;
+  --primary-100: #e3eefb;
+  --primary-200: #c0dcf7;
+  --primary-300: #89c0f0;
+  --primary-400: #4a9fe6;
+  --primary-500: #2383d4;
+  --primary-600: #1567b4;
+  --primary-700: #125292;
+  --primary-800: #134679;
+  --primary-900: #153b63;
 }
 
 .dark .theme-switcher {
@@ -43,4 +65,17 @@ input, textarea  {
   background-color: var(--secondary-color);
   border-color: var(--foreground);    
   border-width: 2px !important;
+}
+
+@keyframes blob {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
 }

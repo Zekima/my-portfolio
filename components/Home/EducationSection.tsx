@@ -15,7 +15,7 @@ export default function EducationSection() {
                 <div className="w-full md:w-1/2 bg-secondary h-64 flex justify-center items-center">
                     <Image src="/images/usn-logo.webp" alt="" width={350} height={61} className="dark:invert"/>
                 </div>
-                <div className="w-full md:w-1/2 bg-primary h-64 text-black text-center flex items-center justify-center flex-col gap-4">
+                <div className="w-full md:w-1/2 bg-primary h-64 text-background text-center flex items-center justify-center flex-col gap-4">
                     <p className="text-2xl font-medium max-w-96">{t("Grade")}</p>
                     <p className="text-xl">{t("GraduationDate")}</p>
                 </div>

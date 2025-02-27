@@ -2,7 +2,13 @@
     "HomePage": {
         "Hero": {
             "Title": "Hi, I'm Christian",
-            "Subtitle": "I craft thoughtful digital experiences. Focused on Next.js, design, and functionality."
+            "Subtitle": "I craft thoughtful digital experiences. Focused on Next.js, design, and functionality.",
+            "SpecializesIn": "I specialize in",
+            "ViewProjects": "View My Projects",
+            "GetInTouch": "Get In Touch",
+            "Badge": "FRONTEND/FULLSTACK DEVELOPER",
+            "ViewProjectsAriaLabel": "View my projects",
+            "GetInTouchAriaLabel": "Get in touch with me"
         },
         "Education": {
             "Title": "Education",
@@ -21,6 +27,10 @@
             "Title": "Projects",
             "DugnadNett": {
                 "Description": "A digital platform developed to make organizing volunteer work easier and more efficient. The solution offers real-time communication, smart filtering features, and a central overview of local volunteer events.",
+                "Button": "Read more ->"
+            },
+            "Lisenskode": {
+                "Description": "A online store built from scratch to explore Vipps integration. The solution features SMTP email delivery of license codes, an admin system, and seamless functionality throughout.",
                 "Button": "Read more ->"
             }
         },
@@ -61,7 +71,68 @@
             "Statement": "How can a web application improve volunteer organization by overcoming the limitations of social media?",
             "Reflection": "Through the project, I have developed a deeper understanding of coding and team communication, especially how to effectively discuss and provide feedback on code. I have learned to express technical solutions clearly and receive constructive criticism, which has been crucial in improving code quality and collaboration between team members.",
             "SourceCode": "Source Code",
-            "ProjectGallery": "Project Gallery"
+            "ProjectGallery": "Project Gallery",
+            "Features": {
+                "RealTime": {
+                    "Title": "Real-time Chat",
+                    "Description": "Socket.IO powered group chats enabling instant communication between participants"
+                },
+                "Maps": {
+                    "Title": "Location Integration",
+                    "Description": "Google Maps API integration for visual representation of dugnad locations"
+                },
+                "Filtering": {
+                    "Title": "Smart Filtering",
+                    "Description": "URL-based state management for advanced filtering and sorting capabilities"
+                },
+                "Auth": {
+                    "Title": "Secure Authentication",
+                    "Description": "Robust authentication system using Auth.js for user management"
+                },
+                "Moderation": {
+                    "Title": "Moderation Tools",
+                    "Description": "Comprehensive controls for dugnad owners to manage participants and content"
+                },
+                "Content": {
+                    "Title": "Rich Content",
+                    "Description": "Markdown support and image uploads to Backblaze B2 for detailed dugnad descriptions"
+                }
+            }
+        },
+        "Lisenskode": {
+            "Title": "Lisenskode",
+            "Subtitle": "Vipps Checkout Integration",
+            "Description": "A online store developed from scratch to explore Vipps Checkout integration. The solution includes SMTP email sending of license codes, an administration system, and seamless interaction between all functions.",
+            "AdditionalInfo": "This project was a great opportunity to test real-world e-commerce workflows, focusing on secure payments, privacy compliance, and efficient admin tools.",
+            "ProjectHighlights": "Project Highlights",
+            "Features": {
+                "Email": {
+                    "Title": "Nodemailer SMTP Sender",
+                    "Description": "Automated license code delivery via email using Nodemailer."
+                },
+                "Payment": {
+                    "Title": "Vipps Checkout Integration",
+                    "Description": "Seamless payment processing with Vipps Checkout."
+                },
+                "Compliance": {
+                    "Title": "Compliance",
+                    "Description": "Adheres to privacy (personvern) and sales terms (salgsbetingelser)."
+                },
+                "Admin": {
+                    "Title": "Admin Dashboard with CRUD",
+                    "Description": "Full-featured admin panel for managing content and licenses."
+                },
+                "Deployment": {
+                    "Title": "Continuous Deployment",
+                    "Description": "Streamlined updates with automated deployment pipelines."
+                },
+                "RichContent": {
+                    "Title": "Rich Content",
+                    "Description": "Markdown support for product descriptions and activation guides."
+                }
+            },
+            "ProjectGallery": "Project Gallery",
+            "ViewOnGithub": "View on GitHub"
         }
     }
 }
