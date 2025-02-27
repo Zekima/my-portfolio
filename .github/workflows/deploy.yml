@@ -26,5 +26,5 @@ jobs:
 
           git pull
           npm install
-          npm run build -- --update-env
+          npm run build
           pm2 restart portfolio

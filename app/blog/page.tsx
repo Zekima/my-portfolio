@@ -12,7 +12,7 @@ export default async function BlogPage() {
         <div>
             {media.docs.map((doc) => 
                 <div key={doc.id}>
-                    <img src={doc.url} width={190} height={100} alt={doc.alt} />
+                    <img src={doc.url || ''} width={190} height={100} alt={doc.alt || ''} />
                 </div>
             )}
         </div>

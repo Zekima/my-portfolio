@@ -121,20 +121,6 @@ export default function ImageGallery({
     document.body.removeChild(link);
   };
 
-  const handleShare = async () => {
-    if (selectedIndex === null || !navigator.share) return;
-    
-    try {
-      await navigator.share({
-        title: filteredImages[selectedIndex].title || filteredImages[selectedIndex].filename,
-        text: filteredImages[selectedIndex].description || `Check out this image from ${projectName}`,
-        url: window.location.href,
-      });
-    } catch (error) {
-      console.error('Error sharing:', error);
-    }
-  };
-
   
 
   const getGridCols = () => {
@@ -259,16 +245,6 @@ export default function ImageGallery({
                   aria-label="Download"
                 >
                   <Download className="w-5 h-5" />
-                </button>
-              )}
-              {enableSharing && navigator.share && (
-                <button
-                  type="button"
-                  onClick={handleShare}
-                  className="p-2 rounded-full bg-black/50 hover:bg-black/80 text-white"
-                  aria-label="Share"
-                >
-                  <Share className="w-5 h-5" />
                 </button>
               )}
               <button
