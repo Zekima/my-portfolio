@@ -9,6 +9,8 @@ import NavBar from '@/components/NavBar/NavBar';
 import Footer from '@/components/Footer';
 import Script from "next/script";
 import type { Metadata } from 'next'
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -65,6 +67,7 @@ export default async function LocaleLayout({
                 </div>
                 <Footer />
             </body>
+            <GoogleAnalytics gaId='G-Q3CJ0SLHG8'/>
         </html>
     );
 }
