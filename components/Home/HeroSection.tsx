@@ -87,7 +87,7 @@ export default function HeroSection() {
           </div>
 
           <img
-            src="/images/me.jpeg"
+            src="/images/me.webp"
             alt="Christian Ledaal - Developer"
             className="w-[450px] h-[600px] object-cover relative z-10 hover:scale-[1.02] transition-transform duration-300"
           />
