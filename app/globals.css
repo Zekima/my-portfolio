@@ -79,3 +79,30 @@ input, textarea  {
 .animation-delay-2000 {
   animation-delay: 2s;
 }
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-conveyor {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+}
+
+.skills-conveyor-inner {
+  animation: scroll-x 30s linear infinite;
+  transition: animation-duration 0.5s ease-in-out;
+}
+
