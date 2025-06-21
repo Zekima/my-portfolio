@@ -17,21 +17,18 @@ import {
 
 export default function HeroSection() {
   const t = useTranslations("HomePage.Hero");
-  const skills = useMemo(
-    () => [
-      { name: "Figma", icon: <SiFigma size={32} /> },
-      { name: "React", icon: <SiReact size={32} /> },
-      { name: "Next.js", icon: <SiNextdotjs size={32} /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss size={32} /> },
-      { name: "TypeScript", icon: <SiTypescript size={32} /> },
-      { name: "PostgreSQL", icon: <SiPostgresql size={32} /> },
-      { name: "Prisma", icon: <SiPrisma size={32} /> },
-      { name: "Git", icon: <SiGit size={32} /> },
-      { name: "Docker", icon: <SiDocker size={32} /> },
-      { name: "Linux", icon: <SiLinux size={32} /> },
-    ],
-    []
-  );
+  const skills = [
+    { name: "Figma", icon: <SiFigma size={32} /> },
+    { name: "React", icon: <SiReact size={32} /> },
+    { name: "Next.js", icon: <SiNextdotjs size={32} /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss size={32} /> },
+    { name: "TypeScript", icon: <SiTypescript size={32} /> },
+    { name: "PostgreSQL", icon: <SiPostgresql size={32} /> },
+    { name: "Prisma", icon: <SiPrisma size={32} /> },
+    { name: "Git", icon: <SiGit size={32} /> },
+    { name: "Docker", icon: <SiDocker size={32} /> },
+    { name: "Linux", icon: <SiLinux size={32} /> },
+  ];
 
   return (
     <div className="pb-12">
@@ -45,10 +42,10 @@ export default function HeroSection() {
               {t("Badge")}
             </span>
 
-            <h1 className="text-9xl font-black leading-[1.1]">{t("Title")}</h1>
+            <h1 className="text-7xl xl:text-9xl font-black leading-[1.1]">{t("Title")}</h1>
           </div>
 
-          <p className="text-4xl font-light text-gray-800 dark:text-gray-300">
+          <p className="text-2xl xl:text-4xl font-light text-gray-800 dark:text-gray-300">
             {t("Subtitle")}
           </p>
 
