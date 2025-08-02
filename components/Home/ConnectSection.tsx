@@ -56,7 +56,7 @@ export default function ConnectSection() {
             aria-labelledby="connect-section-title"
         >
             <div>
-                <h2 id="connect-section-title" className="text-4xl">{t("Title")}</h2>
+                <h2 id="connect-section-title" className="text-4xl font-medium">{t("Title")}</h2>
                 <div className="border-b-2 py-3" role="presentation" />
             </div>
 

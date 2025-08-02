@@ -9,8 +9,8 @@ export default function HomePage() {
             <div className="w-full flex flex-col space-y-36 relative">
                 <HeroSection />
                 <div className="space-y-72 z-20">
-                    <EducationSection />
                     <ProjectsSection />
+                    <EducationSection />
                     <ConnectSection />
                 </div>
             </div>

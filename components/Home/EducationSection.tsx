@@ -7,7 +7,7 @@ export default function EducationSection() {
     return (
         <div className="flex flex-col space-y-24" id="education">
             <div>
-                <p className="text-4xl">{t("Title")}</p>
+                <p className="text-4xl font-medium">{t("Title")}</p>
                 <div className="border-b-2 py-3" />
             </div>
 

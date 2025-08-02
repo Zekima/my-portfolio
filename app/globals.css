@@ -29,7 +29,7 @@ body {
 .light {
   --background: #ededed;
   --foreground: #000;
-  --secondary-color: #e0e0e0;
+  --secondary-color: rgb(220, 222, 228);
   --border-color: #000;
 
   --primary-color: #153b63;

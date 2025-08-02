@@ -25,7 +25,7 @@ export default function NavBar() {
                 <div className="flex gap-4 items-center ">
                     <MenuButton />
                     <Link href="/" aria-label={t('HomeLink')} className="focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
-                        <span className="text-2xl font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                        <span className="text-2xl font-semibold hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
                             1dev
                         </span>
                     </Link>

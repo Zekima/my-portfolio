@@ -1,138 +1,142 @@
 {
-    "HomePage": {
-        "Hero": {
-            "Title": "Hei, jeg er Christian",
-            "Subtitle": "Jeg lager gjennomtenkte digitale opplevelser med fokus på Next.js, design og funksjonalitet.",
-            "SpecializesIn": "Jeg spesialiserer meg på",
-            "ViewProjects": "Se mine prosjekter",
-            "GetInTouch": "Ta kontakt",
-            "Badge": "FRONTEND/FULLSTACK UTVIKLER",
-            "ViewProjectsAriaLabel": "Se mine prosjekter",
-            "GetInTouchAriaLabel": "Ta kontakt med meg"
-        },
-        "Education": {
-            "Title": "Utdanning",
-            "Grade": "Bachelor i IT og Informasjonssystemer",
-            "GraduationDate": "Juni. 2024",
-            "NotableGrades": {
-                "Title": "Fremhevede karakterer",
-                "Items": [
-                    "Bacheloroppgave i IT og Informasjonssystemer",
-                    "Spesialpensum (React JS)",
-                    "Objektorientert programmering 2"
-                ]
-            }
-        },
-        "Projects": {
-            "Title": "Prosjekter",
-            "DugnadNett": {
-                "Description": "En digital plattform utviklet for å gjøre organisering av dugnader enklere og mer effektiv. Løsningen tilbyr sanntidskommunikasjon, smarte filterfunksjoner og en sentral oversikt over lokale dugnader.",
-                "Button": "Les mer ->"
-            },
-            "Lisenskode": {
-                "Description": "En nettbutikk utviklet fra bunnen av for å utforske Vipps Checkout integrasjon. Løsningen inkluderer SMTP-epostutsendelse av lisenskoder, et administrasjonssystem og sømløs samhandling mellom alle funksjoner.",
-                "Button": "Les mer ->"
-            }
-        },
-        "Connect": {
-            "Title": "Kontakt",
-            "P1": "Har du en ny ide du vil utforske, eller vil du bare slå av en prat? Send meg en e-post, så svarer jeg innen en dag!",
-            "P2": "Ikke fan av kontaktskjemaer? Du kan nå meg direkte på ",
-            "Name": "Navn",
-            "NamePlaceholder": "Ola Nordmann",
-            "Email": "E-post",
-            "EmailPlaceholder": "olanordmann@gmail.com",
-            "Message": "Melding",
-            "Submit": "Send Inn",
-            "EmailAriaLabel": "Send e-post til Christian Ledaal",
-            "FormAriaLabel": "Kontaktskjema",
-            "Submitting": "Sender...",
-            "SubmitSuccess": "Takk for meldingen! Jeg svarer så fort jeg kan.",
-            "SubmitError": "Beklager, noe gikk galt. Vennligst prøv igjen eller send meg en e-post direkte."
-        }
+  "HomePage": {
+    "Hero": {
+      "Title": "Hei, jeg er Christian",
+      "Subtitle": "Jeg lager gjennomtenkte digitale opplevelser med fokus på Next.js, design og funksjonalitet.",
+      "SpecializesIn": "Jeg spesialiserer meg på",
+      "ViewProjects": "Se mine prosjekter",
+      "GetInTouch": "Ta kontakt",
+      "Badge": "FRONTEND/FULLSTACK UTVIKLER",
+      "ViewProjectsAriaLabel": "Se mine prosjekter",
+      "GetInTouchAriaLabel": "Ta kontakt med meg"
     },
-    "NavBar": {
-        "SkipToMain": "Hopp til hovedinnhold",
-        "MainNavigation": "Hovednavigasjon",
-        "HomeLink": "Gå til forsiden",
-        "ProjectsSection": "Gå til prosjekter",
-        "EducationSection": "Gå til utdanning",
-        "ConnectSection": "Gå til kontakt",
-        "SiteControls": "Nettstedskontroller",
-        "Projects": "Prosjekter",
-        "Education": "Utdanning",
-        "Connect": "Kontakt"
+    "Education": {
+      "Title": "Utdanning",
+      "Grade": "Bachelor i IT og Informasjonssystemer",
+      "GraduationDate": "Juni. 2024",
+      "NotableGrades": {
+        "Title": "Fremhevede karakterer",
+        "Items": [
+          "Bacheloroppgave i IT og Informasjonssystemer",
+          "Spesialpensum (React JS)",
+          "Objektorientert programmering 2"
+        ]
+      }
     },
     "Projects": {
-        "DugnadNett": {
-            "Title": "DugnadNett",
-            "Subtitle": "Bachelorprosjekt",
-            "Description": "Dette prosjektet utviklet en digital plattform for å organisere dugnader, med sanntidskommunikasjon, filtrering og en sentral oversikt over lokale dugnader.",
-            "Statement": "Hvordan kan en webapplikasjon forbedre dugnadorganisering ved å overkomme begrensninger ved sosiale medier?",
-            "Reflection": "Gjennom prosjektet har jeg utviklet en dypere forståelse for kode og kommunikasjon i team, spesielt hvordan man effektivt kan diskutere og gi tilbakemeldinger på kode. Jeg har lært å uttrykke tekniske løsninger tydelig og motta konstruktiv kritikk, noe som har vært avgjørende for å forbedre kodekvaliteten og samarbeidet mellom gruppemedlemmer.",
-            "SourceCode": "Kildekode",
-            "ProjectGallery": "Prosjektgalleri",
-            "Features": {
-                "RealTime": {
-                    "Title": "Sanntidschat",
-                    "Description": "Socket.IO-drevet gruppechat som muliggjør øyeblikkelig kommunikasjon mellom deltakere"
-                },
-                "Maps": {
-                    "Title": "Stedsintegrasjon",
-                    "Description": "Google Maps API-integrasjon for visuell representasjon av dugnadlokasjoner"
-                },
-                "Filtering": {
-                    "Title": "Smart Filtrering",
-                    "Description": "URL-basert tilstandshåndtering for avanserte filtrerings- og sorteringsmuligheter"
-                },
-                "Auth": {
-                    "Title": "Sikker Autentisering",
-                    "Description": "Robust autentiseringssystem med Auth.js for brukerhåndtering"
-                },
-                "Moderation": {
-                    "Title": "Moderasjonsverktøy",
-                    "Description": "Omfattende kontroller for dugnadeiere til å administrere deltakere og innhold"
-                },
-                "Content": {
-                    "Title": "Rikt Innhold",
-                    "Description": "Markdown-støtte og bildeopplasting til Backblaze B2 for detaljerte dugnadbeskrivelser"
-                }
-            }
-        },
-        "Lisenskode": {
-            "Title": "Lisenskode",
-            "Subtitle": "Vipps Checkout Integrasjon",
-            "Description": "En nettbutikk utviklet fra bunnen av for å utforske Vipps Checkout integrasjon. Løsningen inkluderer SMTP-epostutsendelse av lisenskoder, et administrasjonssystem og sømløs samhandling mellom alle funksjoner.",
-            "AdditionalInfo": "Dette prosjektet var en flott mulighet til å teste e-handelsarbeidsflyter i praksis, med fokus på sikre betalinger, personvernssamsvar og effektive adminverktøy.",
-            "ProjectHighlights": "Prosjekthøydepunkter",
-            "Features": {
-                "Email": {
-                    "Title": "Nodemailer SMTP-sender",
-                    "Description": "Automatisert levering av lisenskoder via e-post med Nodemailer."
-                },
-                "Payment": {
-                    "Title": "Vipps Checkout Integrasjon",
-                    "Description": "Sømløs betalingsbehandling med Vipps Checkout."
-                },
-                "Compliance": {
-                    "Title": "Samsvar",
-                    "Description": "Overholder personvern og salgsbetingelser."
-                },
-                "Admin": {
-                    "Title": "Admin-panel med CRUD",
-                    "Description": "Komplett administrasjonspanel for innholds- og lisenshåndtering."
-                },
-                "Deployment": {
-                    "Title": "Kontinuerlig Distribusjon",
-                    "Description": "Strømlinjeformede oppdateringer med automatiserte distribusjonsrør."
-                },
-                "RichContent": {
-                    "Title": "Rikt innhold",
-                    "Description": "Markdown støtte for produktbeskrivelser og aktiveringsveiledninger."
-                }
-            },
-            "ProjectGallery": "Prosjektgalleri",
-            "ViewOnGithub": "Se på GitHub"
-        }
+      "Title": "Prosjekter",
+      "DugnadNett": {
+        "Description": "En bacheloroppgave utviklet i team, hvor jeg ledet utviklingen. DugnadNett er en plattform for å organisere lokalt frivillig arbeid, med sanntidskommunikasjon, filtrering av arrangementer og et delt arrangementspanel.",
+        "Button": "Les mer ->"
+      },
+      "GitFrost": {
+        "Description": "Et UI/UX-konsept for en Git-plattform som prioriterer flyt og enkelhet.",
+        "Button": "Les mer ->"
+      },
+      "Lisenskode": {
+        "Description": "En nettbutikk utviklet fra bunnen av for å utforske Vipps Checkout integrasjon. Løsningen inkluderer SMTP-epostutsendelse av lisenskoder, et administrasjonssystem og sømløs samhandling mellom alle funksjoner.",
+        "Button": "Les mer ->"
+      }
+    },
+    "Connect": {
+      "Title": "Kontakt",
+      "P1": "Har du en ny ide du vil utforske, eller vil du bare slå av en prat? Send meg en e-post, så svarer jeg innen en dag!",
+      "P2": "Ikke fan av kontaktskjemaer? Du kan nå meg direkte på ",
+      "Name": "Navn",
+      "NamePlaceholder": "Ola Nordmann",
+      "Email": "E-post",
+      "EmailPlaceholder": "olanordmann@gmail.com",
+      "Message": "Melding",
+      "Submit": "Send Inn",
+      "EmailAriaLabel": "Send e-post til Christian Ledaal",
+      "FormAriaLabel": "Kontaktskjema",
+      "Submitting": "Sender...",
+      "SubmitSuccess": "Takk for meldingen! Jeg svarer så fort jeg kan.",
+      "SubmitError": "Beklager, noe gikk galt. Vennligst prøv igjen eller send meg en e-post direkte."
     }
+  },
+  "NavBar": {
+    "SkipToMain": "Hopp til hovedinnhold",
+    "MainNavigation": "Hovednavigasjon",
+    "HomeLink": "Gå til forsiden",
+    "ProjectsSection": "Gå til prosjekter",
+    "EducationSection": "Gå til utdanning",
+    "ConnectSection": "Gå til kontakt",
+    "SiteControls": "Nettstedskontroller",
+    "Projects": "Prosjekter",
+    "Education": "Utdanning",
+    "Connect": "Kontakt"
+  },
+  "Projects": {
+    "DugnadNett": {
+      "Title": "DugnadNett",
+      "Subtitle": "Bachelorprosjekt",
+      "Description": "Dette prosjektet utviklet en digital plattform for å organisere dugnader, med sanntidskommunikasjon, filtrering og en sentral oversikt over lokale dugnader.",
+      "Statement": "Hvordan kan en webapplikasjon forbedre dugnadorganisering ved å overkomme begrensninger ved sosiale medier?",
+      "Reflection": "Gjennom prosjektet har jeg utviklet en dypere forståelse for kode og kommunikasjon i team, spesielt hvordan man effektivt kan diskutere og gi tilbakemeldinger på kode. Jeg har lært å uttrykke tekniske løsninger tydelig og motta konstruktiv kritikk, noe som har vært avgjørende for å forbedre kodekvaliteten og samarbeidet mellom gruppemedlemmer.",
+      "SourceCode": "Kildekode",
+      "ProjectGallery": "Prosjektgalleri",
+      "Features": {
+        "RealTime": {
+          "Title": "Sanntidschat",
+          "Description": "Socket.IO-drevet gruppechat som muliggjør øyeblikkelig kommunikasjon mellom deltakere"
+        },
+        "Maps": {
+          "Title": "Stedsintegrasjon",
+          "Description": "Google Maps API-integrasjon for visuell representasjon av dugnadlokasjoner"
+        },
+        "Filtering": {
+          "Title": "Smart Filtrering",
+          "Description": "URL-basert tilstandshåndtering for avanserte filtrerings- og sorteringsmuligheter"
+        },
+        "Auth": {
+          "Title": "Sikker Autentisering",
+          "Description": "Robust autentiseringssystem med Auth.js for brukerhåndtering"
+        },
+        "Moderation": {
+          "Title": "Moderasjonsverktøy",
+          "Description": "Omfattende kontroller for dugnadeiere til å administrere deltakere og innhold"
+        },
+        "Content": {
+          "Title": "Rikt Innhold",
+          "Description": "Markdown-støtte og bildeopplasting til Backblaze B2 for detaljerte dugnadbeskrivelser"
+        }
+      }
+    },
+    "Lisenskode": {
+      "Title": "Lisenskode",
+      "Subtitle": "Vipps Checkout Integrasjon",
+      "Description": "En nettbutikk utviklet fra bunnen av for å utforske Vipps Checkout integrasjon. Løsningen inkluderer SMTP-epostutsendelse av lisenskoder, et administrasjonssystem og sømløs samhandling mellom alle funksjoner.",
+      "AdditionalInfo": "Dette prosjektet var en flott mulighet til å teste e-handelsarbeidsflyter i praksis, med fokus på sikre betalinger, personvernssamsvar og effektive adminverktøy.",
+      "ProjectHighlights": "Prosjekthøydepunkter",
+      "Features": {
+        "Email": {
+          "Title": "Nodemailer SMTP-sender",
+          "Description": "Automatisert levering av lisenskoder via e-post med Nodemailer."
+        },
+        "Payment": {
+          "Title": "Vipps Checkout Integrasjon",
+          "Description": "Sømløs betalingsbehandling med Vipps Checkout."
+        },
+        "Compliance": {
+          "Title": "Samsvar",
+          "Description": "Overholder personvern og salgsbetingelser."
+        },
+        "Admin": {
+          "Title": "Admin-panel med CRUD",
+          "Description": "Komplett administrasjonspanel for innholds- og lisenshåndtering."
+        },
+        "Deployment": {
+          "Title": "Kontinuerlig Distribusjon",
+          "Description": "Strømlinjeformede oppdateringer med automatiserte distribusjonsrør."
+        },
+        "RichContent": {
+          "Title": "Rikt innhold",
+          "Description": "Markdown støtte for produktbeskrivelser og aktiveringsveiledninger."
+        }
+      },
+      "ProjectGallery": "Prosjektgalleri",
+      "ViewOnGithub": "Se på GitHub"
+    }
+  }
 }
