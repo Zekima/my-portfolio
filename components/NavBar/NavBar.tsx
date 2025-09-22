@@ -26,7 +26,7 @@ export default function NavBar() {
                     <MenuButton />
                     <Link href="/" aria-label={t('HomeLink')} className="focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
                         <span className="text-2xl font-semibold hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
-                            1dev
+                            &lt;/1dev&gt;
                         </span>
                     </Link>
                 </div>
