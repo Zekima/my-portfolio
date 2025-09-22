@@ -32,11 +32,12 @@ export default function ProjectsSection() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-6 gap-6">
-        <div className="relative flex rounded-lg flex-row col-span-1 lg:col-span-6 overflow-hidden group bg-secondary dark:bg-transparent text-foreground ">
+        <div className="relative flex xl:flex-row rounded-lg flex-col col-span-1 lg:col-span-6 overflow-hidden group bg-secondary dark:bg-transparent text-foreground ">
+          <div className="flex md:flex-row flex-col">
           <img
             src="/images/projects/rupturemc/rupturemc.webp"
             alt="RuptureMC Website"
-            className="h-76"
+            className="h-76 w-fit"
             loading="lazy"
           />
 
@@ -44,8 +45,10 @@ export default function ProjectsSection() {
             src="/images/projects/rupturemc/rupture-leaderboard.png"
             alt="RuptureMC Leaderboard"
             loading="lazy"
-            className=" h-64"
+            className="h-64 w-fit hidden md:block"
           />
+          </div>
+
           <div className="relative z-10 flex flex-col justify-start  gap-6 p-6">
             <h3 className="text-3xl font-semibold">RuptureMC</h3>
             <p className="text-md font-light flex flex-col gap-2 ">
