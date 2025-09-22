@@ -11,7 +11,7 @@ export default function ThemeSwitcher() {
 
     return (
         <button 
-            className="theme-switcher focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" 
+            className="theme-switcher focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary" 
             onClick={handleThemeChange}
         />
     )

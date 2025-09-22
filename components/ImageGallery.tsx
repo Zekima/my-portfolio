@@ -203,7 +203,7 @@ export default function ImageGallery({
             <button
               type="button"
               onClick={() => openImage(index)}
-              className="w-full h-full p-0 border-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary"
+              className="w-full h-full p-0 border-none cursor-pointer focus:outline-hidden focus:ring-2 focus:ring-primary"
             >
               <Image
                 src={`/images/projects/${projectName}/gallery/${image.filename}`}
@@ -236,7 +236,7 @@ export default function ImageGallery({
 
       {/* Lightbox/Modal */}
       {selectedIndex !== null && (
-        <div className="fixed inset-0  top-0 bg-black/90 backdrop-blur-sm z-50 flex flex-col items-center justify-center p-4">
+        <div className="fixed inset-0  top-0 bg-black/90 backdrop-blur-xs z-50 flex flex-col items-center justify-center p-4">
           {/* Top toolbar */}
           <div className="absolute top-0 left-0 right-0 flex justify-between items-center p-4 bg-black/50 z-10">
             <div className="text-white">
@@ -323,7 +323,7 @@ export default function ImageGallery({
 
           {/* Main image */}
           <div
-            className={`relative flex-grow flex items-center justify-center w-full max-h-[calc(100vh-200px)] overflow-auto`}
+            className={`relative grow flex items-center justify-center w-full max-h-[calc(100vh-200px)] overflow-auto`}
             style={{
               cursor: zoomLevel > 1 ? "move" : "default",
             }}
@@ -409,7 +409,7 @@ export default function ImageGallery({
                       );
                       setSelectedIndex(originalIndex);
                     }}
-                    className={`relative flex-shrink-0 w-20 h-14 rounded overflow-hidden transition-all ${
+                    className={`relative shrink-0 w-20 h-14 rounded overflow-hidden transition-all ${
                       selectedIndex ===
                       imageData.findIndex((i) => i.filename === img.filename)
                         ? "ring-2 ring-primary scale-105"

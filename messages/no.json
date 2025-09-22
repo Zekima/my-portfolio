@@ -2,13 +2,13 @@
   "HomePage": {
     "Hero": {
       "Title": "Hei, jeg er Christian",
-      "Subtitle": "Jeg lager gjennomtenkte digitale opplevelser med fokus på Next.js, design og funksjonalitet.",
+      "Subtitle": "Jeg hjelper bedrifter å bygge moderne, raske og brukervennlige nettsider.",
       "SpecializesIn": "Jeg spesialiserer meg på",
-      "ViewProjects": "Se mine prosjekter",
+      "ViewProjects": "Utforsk mine prosjekter",
       "GetInTouch": "Ta kontakt",
       "Badge": "FRONTEND/FULLSTACK UTVIKLER",
-      "ViewProjectsAriaLabel": "Se mine prosjekter",
-      "GetInTouchAriaLabel": "Ta kontakt med meg"
+      "ViewProjectsAriaLabel": "Se prosjekter",
+      "GetInTouchAriaLabel": "Kontakt meg"
     },
     "Education": {
       "Title": "Utdanning",
@@ -25,6 +25,15 @@
     },
     "Projects": {
       "Title": "Prosjekter",
+      "RuptureMC": {
+        "Features": [
+          "Bygde REST API for ledertavler og brukerprofiler",
+          "Koblet spillserverdata til frontend i sanntid",
+          "Laget en WordPress-plugin for dynamisk nyhetshenting",
+          "Redesignet landingssiden"
+        ],
+        "Button": "Les mer ->"
+      },
       "DugnadNett": {
         "Description": "En bacheloroppgave utviklet i team, hvor jeg ledet utviklingen. DugnadNett er en plattform for å organisere lokalt frivillig arbeid, med sanntidskommunikasjon, filtrering av arrangementer og et delt arrangementspanel.",
         "Button": "Les mer ->"

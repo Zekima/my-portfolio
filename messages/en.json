@@ -2,7 +2,7 @@
   "HomePage": {
     "Hero": {
       "Title": "Hi, I'm Christian",
-      "Subtitle": "I craft thoughtful digital experiences. Focused on Next.js, design, and functionality.",
+      "Subtitle": "I help businesses build modern, fast, and user-friendly websites.",
       "SpecializesIn": "I specialize in",
       "ViewProjects": "View My Projects",
       "GetInTouch": "Get In Touch",
@@ -25,6 +25,15 @@
     },
     "Projects": {
       "Title": "Projects",
+      "RuptureMC": {
+        "Features": [
+          "Built REST API for leaderboards & user profiles",
+          "Connected game server data to frontend in real-time",
+          "Created custom WordPress plugin to pull news dynamically",
+          "Redesigned landing page"
+        ],
+        "Button": "Read more ->"
+      },
       "DugnadNett": {
         "Description": "A bachelor thesis project built in a team, where I led development. DugnadNett is a platform for organizing local volunteer work, with real-time communication, event filtering, and a shared event dashboard.",
         "Button": "Read more ->"

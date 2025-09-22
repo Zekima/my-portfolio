@@ -12,7 +12,7 @@ export default function NavBar() {
             {/* Skip to main content link - hidden by default, visible on focus */}
             <a 
                 href="#main-content" 
-                className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-background focus:text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-background focus:text-foreground focus:outline-hidden focus:ring-2 focus:ring-primary"
             >
                 {t('SkipToMain')}
             </a>
@@ -24,14 +24,14 @@ export default function NavBar() {
             >
                 <div className="flex gap-4 items-center ">
                     <MenuButton />
-                    <Link href="/" aria-label={t('HomeLink')} className="focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
-                        <span className="text-2xl font-semibold hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                    <Link href="/" aria-label={t('HomeLink')} className="focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary">
+                        <span className="text-2xl font-semibold hover:text-primary focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary">
                             &lt;/1dev&gt;
                         </span>
                     </Link>
                 </div>
 
-                <div className="text-lg flex-grow justify-center gap-4 hidden sm:flex">
+                <div className="text-lg grow justify-center gap-4 hidden sm:flex">
                     {[
                         { href: '/#projects', label: t('Projects') },
                         { href: '/#education', label: t('Education') },
@@ -40,7 +40,7 @@ export default function NavBar() {
                         <Link 
                             key={href}
                             href={href}
-                            className="relative inline-block group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
+                            className="relative inline-block group focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary rounded-xs"
                             aria-label={`${label}Section`}
                         >
                             <span className="relative inline-block">

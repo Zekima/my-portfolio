@@ -17,12 +17,12 @@ export default function MenuButton() {
         <div className="relative sm:hidden flex">
             <button
                 onClick={toggleMenu}
-                className="sm:hidden flex z-[51] transition-transform duration-200 hover:scale-110"
+                className="sm:hidden flex z-51 transition-transform duration-200 hover:scale-110"
             >
                 {isOpen ? <X size={32} color="white" className="z-30" /> : <Menu size={32} />}
             </button>
 
-            <div className={`fixed inset-0 bg-black/90 z-50 backdrop-blur-sm transition-all duration-300 ease-in-out
+            <div className={`fixed inset-0 bg-black/90 z-50 backdrop-blur-xs transition-all duration-300 ease-in-out
                 ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                 <div className={`flex flex-col items-center justify-center h-full transition-all duration-300
                     ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>

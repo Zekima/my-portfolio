@@ -67,7 +67,7 @@ export default function ConnectSection() {
                         {t("P2")}{" "}
                         <a 
                             href="mailto:christianledaal@gmail.com"
-                        className="underline hover:text-primary focus:text-primary transition-colors focus:bg-black focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                        className="underline hover:text-primary focus:text-primary transition-colors focus:bg-black focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary"
                             aria-label={t("EmailAriaLabel") || "Send email to Christian Ledaal"}
                         >
                             christianledaal@gmail.com
@@ -89,7 +89,7 @@ export default function ConnectSection() {
                                 id="name"
                                 name="name"
                                 placeholder={t("NamePlaceholder")}
-                                    className="border p-2 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+                                    className="border p-2 placeholder:text-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary"
                                 required
                                 aria-required="true"
                                 autoComplete="name"
@@ -102,7 +102,7 @@ export default function ConnectSection() {
                                 id="email"
                                 name="email"
                                 placeholder={t("EmailPlaceholder")}
-                                className="border p-2 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+                                className="border p-2 placeholder:text-gray-500 focus:outline-hidden focus:ring-2 focus:ring-primary"
                                 required
                                 aria-required="true"
                                 autoComplete="email"
@@ -113,7 +113,7 @@ export default function ConnectSection() {
                             <textarea
                                 id="message"
                                 name="message"
-                                className="border p-2 min-h-32 focus:outline-none focus:ring-2 focus:ring-primary"
+                                className="border p-2 min-h-32 focus:outline-hidden focus:ring-2 focus:ring-primary"
                                 required
                                 aria-required="true"
                             ></textarea>
@@ -122,7 +122,7 @@ export default function ConnectSection() {
                         <button
                             type="submit"
                             disabled={isLoading}
-                            className="bg-primary h-[52px] text-background font-medium text-lg transition-all duration-100 hover:opacity-[85%] disabled:opacity-70 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary flex items-center justify-center"
+                            className="bg-primary h-[52px] text-background font-medium text-lg transition-all duration-100 hover:opacity-85 disabled:opacity-70 disabled:cursor-not-allowed focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-primary flex items-center justify-center"
                             aria-busy={isLoading}
                         >
                             {isLoading ? (

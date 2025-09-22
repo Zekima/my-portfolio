@@ -2,11 +2,27 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { SiGithub } from "react-icons/si";
+import { Check } from "lucide-react";
+import { Server, Database, RefreshCw, Newspaper, Brush } from "lucide-react";
 
 export default function ProjectsSection() {
   const tSection = useTranslations("HomePage.Projects");
   const tDugnadNett = useTranslations("HomePage.Projects.DugnadNett");
   const tGitFrost = useTranslations("HomePage.Projects.GitFrost");
+  const tRuptureMc = useTranslations("HomePage.Projects.RuptureMC");
+
+  const ruptureMcFeatures = [
+    { icon: <Server size={18} className="text-primary" />, key: "Features.0" },
+    {
+      icon: <RefreshCw size={18} className="text-primary" />,
+      key: "Features.1",
+    },
+    {
+      icon: <Newspaper size={18} className="text-primary" />,
+      key: "Features.2",
+    },
+    { icon: <Brush size={18} className="text-primary" />, key: "Features.3" },
+  ];
 
   return (
     <section className="flex flex-col space-y-24" id="projects">
@@ -16,6 +32,39 @@ export default function ProjectsSection() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-6 gap-6">
+        <div className="relative flex rounded-lg flex-row col-span-1 lg:col-span-6 overflow-hidden group bg-secondary dark:bg-transparent text-foreground ">
+          <img
+            src="/images/projects/rupturemc/rupturemc.webp"
+            alt="RuptureMC Website"
+            className="h-76"
+            loading="lazy"
+          />
+
+          <img
+            src="/images/projects/rupturemc/rupture-leaderboard.png"
+            alt="RuptureMC Leaderboard"
+            loading="lazy"
+            className=" h-64"
+          />
+          <div className="relative z-10 flex flex-col justify-start  gap-6 p-6">
+            <h3 className="text-3xl font-semibold">RuptureMC</h3>
+            <p className="text-md font-light flex flex-col gap-2 ">
+              {ruptureMcFeatures.map((feature) => (
+                <span key={feature.key} className="flex items-center gap-2">
+                  {feature.icon} {tRuptureMc(feature.key)}
+                </span>
+              ))}
+            </p>
+            <div className="flex gap-2 items-center">
+              <Link
+                href="/projects/rupturemc"
+                className="bg-primary h-11 flex items-center px-4 text-lg font-medium text-background rounded-md hover:bg-primary-700 dark:hover:bg-primary-300 transition-opacity"
+              >
+                {tRuptureMc("Button")}
+              </Link>
+            </div>
+          </div>
+        </div>
         <div className="bg-secondary col-span-1 lg:col-span-3 rounded-lg flex flex-col justify-between p-6 space-y-6 overflow-hidden relative">
           <div>
             <h3 className="text-3xl font-semibold">DugnadNett</h3>
@@ -33,7 +82,7 @@ export default function ProjectsSection() {
           <div className="flex items-center gap-2">
             <Link
               href="/projects/dugnadnett"
-              className="bg-primary h-11 flex items-center px-4 text-lg text-background font-medium rounded-md hover:opacity-80 transition-opacity"
+              className="bg-primary h-11 flex items-center px-4 text-lg text-background font-medium rounded-md hover:bg-primary-700 dark:hover:bg-primary-300 transition-opacity"
             >
               {tDugnadNett("Button")}
             </Link>
@@ -70,7 +119,7 @@ export default function ProjectsSection() {
             <div className="flex gap-2 items-center">
               <Link
                 href="/projects/gitfrost"
-                className="bg-primary h-11 flex items-center px-4 text-lg font-medium text-background rounded-md hover:opacity-80 transition-opacity"
+                className="bg-primary h-11 flex items-center px-4 text-lg font-medium text-background rounded-md hover:bg-primary-700 dark:hover:bg-primary-300 transition-opacity"
               >
                 {tGitFrost("Button")}
               </Link>
@@ -84,19 +133,6 @@ export default function ProjectsSection() {
               </a>
             </div>
           </div>
-        </div>
-
-        <div className="bg-secondary col-span-1 lg:col-span-2 p-6 rounded-lg">
-          <h3 className="text-2xl font-medium">Project Nordlys</h3>
-          <p className="text-base mt-2 text-muted-foreground">Coming soon...</p>
-        </div>
-        <div className="bg-secondary col-span-1 lg:col-span-2 p-6 rounded-lg">
-          <h3 className="text-2xl font-medium">Project Svaberg</h3>
-          <p className="text-base mt-2 text-muted-foreground">Coming soon...</p>
-        </div>
-        <div className="bg-secondary col-span-1 lg:col-span-2 p-6 rounded-lg">
-          <h3 className="text-2xl font-medium">Project Fyr</h3>
-          <p className="text-base mt-2 text-muted-foreground">Coming soon...</p>
         </div>
       </div>
     </section>
